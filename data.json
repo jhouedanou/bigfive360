@@ -1,0 +1,45 @@
+{
+  "logo": "/images/logo.png",
+  "navbar": {
+    "numero": "+225 27 21 59 42 28"
+  },
+  "header": {
+    "title": "BigFive360",
+    "subtitle": "Accélérez vos ventes et locations immobilières grâce aux contenus 360°"
+  },
+  "hero_section": {
+    "headline": "BigFive360",
+    "subheadline": "La technologie Matterport au service de vos visites virtuelles",
+    "cta": "Contactez-nous"
+  },
+  "sections": [
+    {
+      "title": "Notre Technologie",
+      "content": "Nous utilisons la technologie Matterport qui permet un scan 3D de votre bien, permettant d’en créer des visites virtuelles réalistes et immersives, facilement partageables sur n’importe quel appareil IOS ou Android. Vous pourrez obtenir un avantage concurrentiel à nul autre égal."
+    },
+    {
+      "title": "Avantages",
+      "content": "Obtenez un avantage concurrentiel avec des visites virtuelles réalistes et immersives. Partagez facilement sur n'importe quel appareil IOS ou Android."
+    },
+    {
+      "title": "Contactez-nous",
+      "content": "Pour plus d'informations, contactez-nous à support@bigfive360.com."
+    }
+  ],
+  "form_section": {
+    "title": "Contactez-nous",
+    "form_fields": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer"
+    }
+  },
+  "images_captions": [
+    "Exemple de visite virtuelle réalisée avec Matterport",
+    "Technologie de scan 3D en action"
+  ],
+  "footer": {
+    "text": "© 2023 BigFive360. Tous droits réservés."
+  }
+}

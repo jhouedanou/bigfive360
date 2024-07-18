@@ -1,0 +1,47 @@
+$primary-color: #3273dc;
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    color: $primary-color;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.3s ease-in-out,
+        visibility 0.3s ease-in-out;
+    z-index: 999;
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#vangogh {
+    background-color: red;
+    width: 100%;
+}
