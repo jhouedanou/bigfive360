@@ -2,7 +2,7 @@
   <div id="technologie" class="container">
     <h2>{{ globalData?.technologie.title }}</h2>
     <p>{{ globalData?.technologie.content }}</p>
-    <img :src="globalData?.technologie.logo" />
+    <NuxtImg :src="globalData?.technologie.logo" format="webp" quality="80" />
   </div>
 </template>
 

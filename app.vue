@@ -7,6 +7,7 @@
     <LaTechnologie />
     <NosServices />
     <Options />
+    <Ccm />
     <Demo />
   </div>
 </template>

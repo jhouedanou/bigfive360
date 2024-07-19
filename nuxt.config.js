@@ -23,7 +23,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/robots',
-    'nuxt-simple-sitemap'
+    'nuxt-simple-sitemap',
+    '@nuxt/image'
   ],
   vite: {
     server: {

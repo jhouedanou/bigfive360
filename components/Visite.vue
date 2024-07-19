@@ -3,10 +3,10 @@
     <div class="visite-item" @click="openLightbox">
       <div class="columns">
         <div class="column is-three-fifths">
-          <img :src="preview" />
+          <NuxtImg :src="preview" format="webp" quality="80" />
         </div>
         <div class="column is-one-fifth">
-          <img :src="icone" />
+          <NuxtImg :src="icone" format="webp" quality="80" />
           <h3>{{ type }}</h3>
           <p>{{ description }}</p>
           <button>{{ action }}</button>

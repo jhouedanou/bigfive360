@@ -11,6 +11,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/robots": "^4.0.1",
     "bulma": "^1.0.1",
     "material-icons": "^1.13.12",
