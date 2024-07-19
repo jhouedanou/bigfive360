@@ -1,75 +1,38 @@
-# Nuxt 3 Minimal Starter
+# BigFive360
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+BigFive360 est une application qui accélère vos ventes et locations immobilières grâce aux contenus 360°.
 
-## Setup
+## Présentation
 
-Make sure to install the dependencies:
+BigFive360 utilise la technologie Matterport pour créer des visites virtuelles réalistes et immersives de biens immobiliers. Ces visites sont facilement partageables sur n'importe quel appareil iOS ou Android, offrant un avantage concurrentiel unique dans le secteur immobilier.
 
-```bash
-# npm
-npm install
+## Mise en route
 
-# pnpm
-pnpm install
+Pour lancer l'application, suivez ces étapes :
 
-# yarn
-yarn install
+1. Clonez le dépôt :
+2. Installez les dépendances : yarn install
+3. Lancez le serveur de développement avec Browsersync : yarn run dev 
 
-# bun
-bun install
-```
+4. Browsersync ouvrira automatiquement votre navigateur par défaut. Si ce n'est pas le cas, accédez à l'URL indiquée dans la console.
 
-## Development Server
+## Construction pour la production
 
-Start the development server on `http://localhost:3000`:
+Pour construire l'application pour la production :
 
-```bash
-# npm
-npm run dev
+Vous pouvez ensuite prévisualiser la version de production localement https://localhost:3001
 
-# pnpm
-pnpm run dev
 
-# yarn
-yarn dev
+## Technologies utilisées
 
-# bun
-bun run dev
-```
+- Nuxt 3
+- Vue.js
+- Bulma CSS
+- SCSS
+- Browsersync
+- Chokidar
 
-## Production
+Pour plus d'informations sur la configuration et le déploiement, consultez la [documentation de Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Jean Luc Houédanou

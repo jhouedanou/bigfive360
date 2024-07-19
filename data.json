@@ -46,9 +46,16 @@
       "lien": ""
     }
   ],
-  "offre": {
-    "title": "Notre Technologie",
-    "content": "Nous utilisons la technologie Matterport qui permet un scan 3D de votre bien, permettant d’en créer des visites virtuelles réalistes et immersives, facilement partageables sur n’importe quel appareil IOS ou Android. Vous pourrez obtenir un avantage concurrentiel à nul autre égal."
+  "technologie": {
+    "title": "La technologie",
+    "content": "Nous utilisons la technologie Matterport qui permet un scan 3D de votre bien, permettant d’en créer des visites virtuelles réalistes et immersives, facilement partageables sur n’importe quel appareil IOS ou Android.",
+    "content2": "Vous pourrez obtenir un avantage concurrentiel à nul autre égal. C’est le moyen approprié pour présenter un bien en ligne et faire visiter vos propriétés aux futurs clients.",
+    "logo": "/images/logo-matterport.svg"
+  },
+  "services": {
+    "title": "Big Five 360 propose un service de captation visuelle en 3 dimensions pour tout type d’espace",
+    "content": "Orientez efficacement vos clients vers les biens qui leur correspondent en évitant les déplacements inutiles.",
+    "txtBtn": "Comment ça marche"
   },
   "form_section": {
     "title": "Contactez-nous",
