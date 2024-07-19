@@ -3,29 +3,53 @@
   "navbar": {
     "numero": "+225 27 21 59 42 28"
   },
-  "header": {
+  "hero": {
     "title": "BigFive360",
-    "subtitle": "Accélérez vos ventes et locations immobilières grâce aux contenus 360°"
+    "subtitle": "Accélérez vos ventes\net locations immobilières grâce\naux contenus 360°",
+    "txtBtn": "Découvrir"
   },
-  "hero_section": {
-    "headline": "BigFive360",
-    "subheadline": "La technologie Matterport au service de vos visites virtuelles",
-    "cta": "Contactez-nous"
+  "avantages": {
+    "headline": "Augmentez l’audience de vos annonces immobilières",
+    "listes": {
+      "1": "Démarquez-vous de la concurrence en offrant une expérience plus immersive",
+      "2": "Mettez en valeur vos biens immobiliers",
+      "3": "Faites visiter sans vous déplacer",
+      "4": "Orientez vos clients efficacement vers les biens qui leur correspondent",
+      "5": "Optimisez votre temps en concluant plus rapidement vos transactions",
+      "6": "Augmentez le trafic sur votre site et touchez un public plus large"
+    }
   },
-  "sections": [
+  "notreOffre": "Notre offre",
+  "visites": [
     {
-      "title": "Notre Technologie",
-      "content": "Nous utilisons la technologie Matterport qui permet un scan 3D de votre bien, permettant d’en créer des visites virtuelles réalistes et immersives, facilement partageables sur n’importe quel appareil IOS ou Android. Vous pourrez obtenir un avantage concurrentiel à nul autre égal."
+      "type": "Visite Virtuelle 3D",
+      "description": "Vos prospects se déplacent d’une pièce à l’autre de votre bien, avec une impression de liberté inégalée.",
+      "action": "DÉCOUVRIR",
+      "icone": "/images/visite-virtuelle-icone-3d.svg",
+      "preview": "/images/visite-virtuelle-3d-preview.webp",
+      "lien": "https://my.matterport.com/show/?m=vRHA4sXLfNS"
     },
     {
-      "title": "Avantages",
-      "content": "Obtenez un avantage concurrentiel avec des visites virtuelles réalistes et immersives. Partagez facilement sur n'importe quel appareil IOS ou Android."
+      "type": "Visite Virtuelle HD",
+      "description": "Vos biens présentés de façon immersive et en haute définition, grâce à des panoramas de haute qualité.",
+      "action": "DÉCOUVRIR",
+      "icone": "/images/visite-virtuelle-icone-hd.svg",
+      "preview": "/images/visite-virtuelle-hd-preview.webp",
+      "lien": "https://webobook.com/public/6303a154e0d3ec3be1676652,en"
     },
     {
-      "title": "Contactez-nous",
-      "content": "Pour plus d'informations, contactez-nous à support@bigfive360.com."
+      "type": "Retouche panoramas",
+      "description": "Confiez nous vos fichiers RAW,\nDNG, GPR et tout autre type\nde panoramas et laissez nous\nles sublimer.",
+      "action": "DÉCOUVRIR",
+      "icone": "/images/retouche.svg",
+      "preview": "/images/retouche-preview.webp",
+      "lien": ""
     }
   ],
+  "offre": {
+    "title": "Notre Technologie",
+    "content": "Nous utilisons la technologie Matterport qui permet un scan 3D de votre bien, permettant d’en créer des visites virtuelles réalistes et immersives, facilement partageables sur n’importe quel appareil IOS ou Android. Vous pourrez obtenir un avantage concurrentiel à nul autre égal."
+  },
   "form_section": {
     "title": "Contactez-nous",
     "form_fields": {

@@ -30,8 +30,7 @@
 
 <script setup>
 import { defineEmits } from "vue";
-import { useGlobalData } from "~/composables/useGlobalData";
-const { data: globalData } = useGlobalData();
+const globalData = inject("globalData");
 const emit = defineEmits(["toggle-sidebar"]);
 const toggleSidebar = () => {
   emit("toggle-sidebar");

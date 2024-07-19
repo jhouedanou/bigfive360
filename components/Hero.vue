@@ -1,7 +1,13 @@
 <template>
   <section class="hero is-link is-fullheight-with-navbar">
     <div class="hero-body">
-      <p class="title">Fullheight hero with navbar</p>
+      <div class="container">
+        <p class="title">{{ globalData?.hero.subtitle }}</p>
+        <button class="lebtn">{{ globalData?.hero.txtBtn }}</button>
+      </div>
     </div>
   </section>
 </template>
+<script setup>
+const globalData = inject("globalData");
+</script>

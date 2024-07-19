@@ -2,17 +2,23 @@
   <div id="app">
     <Header @toggle-sidebar="toggleSidebar" />
     <Hero />
+    <Avantages />
+    <NotreOffre />
+    <LaTechnologie />
+    <NosServices />
+    <Options />
+    <Demo />
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-
-import Header from "./components/Header.vue";
-
 const sidebarOpen = ref(false);
-
 const toggleSidebar = () => {
   sidebarOpen.value = !sidebarOpen.value;
 };
+
+import { useGlobalData } from "~/composables/useGlobalData";
+const { data: globalData } = useGlobalData();
+provide("globalData", globalData);
 </script>
