@@ -171,6 +171,11 @@
       }
     ]
   },
+  "demo": {
+    "text": "Vous souhaitez une demo ? Un devis personnalisé ?",
+    "btn": "Contactez-nous",
+    "introForm": "Demandez une démo GRATUITE\net voyez par vous-même!"
+  },
   "form_section": {
     "title": "Contactez-nous",
     "form_fields": {
