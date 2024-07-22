@@ -11,3 +11,8 @@
 <script setup>
 const globalData = inject("globalData");
 </script>
+<style scoped lang="scss">
+.hero {
+  background: url("../images/hero.webp") no-repeat center center;
+}
+</style>
