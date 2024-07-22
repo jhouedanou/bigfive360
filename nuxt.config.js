@@ -26,6 +26,9 @@ export default defineNuxtConfig({
     'nuxt-simple-sitemap',
     '@nuxt/image'
   ],
+  image: {
+    provider: 'vercel'
+  },  
   vite: {
     server: {
       fs: {
