@@ -18,5 +18,10 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "YARN_CHECKSUM_BEHAVIOR": "update"
+    }
+  }
 }
