@@ -5,6 +5,23 @@
     role="navigation"
     aria-label="main navigation"
   >
+    <!-- la sidebar-->
+    <div class="sidebar" :class="{ 'is-active': isSidebarOpen }">
+      <!-- Contenu de la sidebar -->
+      <ul>
+        <li><a href="#!">Accueil</a></li>
+        <li><a href="#!">Services</a></li>
+        <li><a href="#!">À propos</a></li>
+        <li><a href="#!">Contact</a></li>
+      </ul>
+    </div>
+    <div
+      class="sidebar-overlay"
+      v-if="isSidebarOpen"
+      @click="toggleSidebar"
+    ></div>
+
+    <!-- le content de la navbar -->
     <div id="vangogh" class="columns">
       <div class="column is-half m-0 p-0">
         <div class="navbar-brand">
@@ -31,14 +48,13 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-import { defineEmits } from "vue";
 
 const globalData = inject("globalData");
-const emit = defineEmits(["toggle-sidebar"]);
 const isSticky = ref(false);
+const isSidebarOpen = ref(false);
 
 const toggleSidebar = () => {
-  emit("toggle-sidebar");
+  isSidebarOpen.value = !isSidebarOpen.value;
 };
 
 const handleScroll = () => {
@@ -53,7 +69,47 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>
+
 <style scoped lang="scss">
+// Vos styles existants...
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.3s ease;
+  z-index: 1001;
+
+  &.is-active {
+    left: 0;
+  }
+
+  ul {
+    padding: 20px;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
 header {
   background-color: #ffffff00;
   position: absolute;
@@ -81,5 +137,27 @@ header {
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 145px;
+  .navbar-item {
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      color: #ffffff;
+      font-size: 3em;
+      margin-right: 0.5em;
+    }
+  }
 }
 </style>
