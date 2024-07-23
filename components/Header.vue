@@ -23,7 +23,7 @@
 
     <!-- le content de la navbar -->
     <div id="vangogh" class="columns">
-      <div class="column is-half m-0 p-0">
+      <div id="natalia" class="column is-half m-0 p-0">
         <div class="navbar-brand">
           <a class="navbar-item" @click="toggleSidebar">
             <span class="material-icons">menu</span>
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="column is-half">
+      <div id="natavia" class="column is-half">
         <div class="navbar-end">
           <a class="navbar-item">
             <span class="material-icons">phone</span>
@@ -149,7 +149,6 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-
     align-items: center;
     justify-content: center;
     flex-direction: column;

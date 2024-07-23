@@ -1,8 +1,7 @@
-$primary-color: #3273dc;
+$primary-color: #e61d00;
 
 body {
-    font-family: "Montserrat", sans-serif;
-
+    font-family: "Work Sans", sans-serif;
     color: $primary-color;
 }
 .sidebar {
@@ -44,4 +43,47 @@ body {
 #vangogh {
     background-color: red;
     width: 100%;
+#natavia{
+    .navbar-item{
+        &:nth-of-type(1){
+            letter-spacing: normal;
+            white-space: nowrap;
+            box-sizing: border-box;
+            font-family: Work Sans,sans-serif;
+            margin: 4px 33px 0 0!important;
+            padding: 0!important;
+            font-weight: 700!important;
+            font-size: 20px;
+            color: #fff;
+            position: relative;
+            .material-icons{
+                position: absolute;
+                font-family: "Material Icons", sans-serif !important;
+                font-size: 19px;
+                left: -25px;
+                top: 10px;
+            }
+        }
+        &:nth-of-type(2){
+
+            letter-spacing: normal;
+        span{
+            font-family: "Material Icons", sans-serif !important;
+            font-size: 19px;
+            color:white;
+            &:hover{
+        
+            }
+        }
+        }    
+    }      
+    }
 }
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
