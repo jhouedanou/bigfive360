@@ -21,5 +21,7 @@ const globalData = inject("globalData");
 <style lang="scss">
 #avantages {
   background: #e5e5e5;
+  margin: 0;
+  padding: 0;
 }
 </style>

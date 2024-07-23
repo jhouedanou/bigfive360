@@ -33,4 +33,8 @@ $primary-color: #e61d00;
 .hero {
   background: $primary-color !important;
 }
+.hero-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 </style>

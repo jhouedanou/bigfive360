@@ -1,7 +1,33 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from "vue";
+
+const globalData = inject("globalData");
+const isSticky = ref(false);
+const isSidebarOpen = ref(false);
+const props = defineProps({
+  activeSlideIndex: Number,
+});
+const toggleSidebar = () => {
+  isSidebarOpen.value = !isSidebarOpen.value;
+};
+
+const handleScroll = () => {
+  isSticky.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+</script>
+
 <template>
   <header
     class="navbar is-light"
-    :class="{ sticky: isSticky }"
+    :class="[{ sticky: isSticky }, `slide-active-${activeSlideIndex}`]"
     role="navigation"
     aria-label="main navigation"
   >
@@ -45,30 +71,6 @@
     </div>
   </header>
 </template>
-
-<script setup>
-import { ref, onMounted, onUnmounted } from "vue";
-
-const globalData = inject("globalData");
-const isSticky = ref(false);
-const isSidebarOpen = ref(false);
-
-const toggleSidebar = () => {
-  isSidebarOpen.value = !isSidebarOpen.value;
-};
-
-const handleScroll = () => {
-  isSticky.value = window.scrollY > 0;
-};
-
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
-</script>
 
 <style scoped lang="scss">
 // Vos styles existants...
@@ -121,6 +123,14 @@ header {
     margin: 0 auto;
     left: 0;
     right: 0;
+  }
+  &.slide-active-1,
+  &.slide-active-2 {
+    background-color: #fff !important;
+    transition: all 0.3s ease;
+    * {
+      color: #e61d00 !important;
+    }
   }
 }
 #vangogh {
