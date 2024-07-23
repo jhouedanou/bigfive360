@@ -115,11 +115,9 @@ header {
   position: absolute;
   width: 100%;
   &.sticky {
-    background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-
-    max-width: 80vw;
+    width: 100vw;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -129,6 +127,10 @@ header {
   background-color: #ffffff00;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  margin: 0;
+  .navbar-end {
+    height: 100%;
+  }
 }
 .sticky {
   position: fixed;
@@ -137,6 +139,10 @@ header {
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
+}
+#natavia {
+  margin: 0;
+  padding: 0;
 }
 .navbar-brand {
   display: flex;
