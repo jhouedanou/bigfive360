@@ -1,8 +1,6 @@
 node_modules/
 # Dépendances
 /node_modules
-/.nuxt
-/public
 # Fichiers de build
 /build
 /dist
