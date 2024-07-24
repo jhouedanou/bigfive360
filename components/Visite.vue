@@ -72,10 +72,13 @@ const updateSlider = (event) => {
 </template>
 
 <style scoped lang="scss">
+.swiper-pagination-bullet {
+  background-color: #e61d00 !important;
+}
 .visite-item {
   background-color: #1d1d1d;
   margin: 80px auto 0;
-  max-width: 1100px;
+  max-width: 90vw;
   .visite-visuel {
     img {
       width: 100%;

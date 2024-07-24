@@ -23,7 +23,7 @@
 const globalData = inject("globalData");
 </script>
 
-<style scoped lang="scss" Ò>
+<style scoped lang="scss">
 /* Styles spécifiques au composant */
 #technologie {
   margin: 0;
