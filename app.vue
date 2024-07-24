@@ -19,10 +19,7 @@ provide("globalData", globalData);
 
 <template>
   <div id="app">
-    <Header
-      @toggle-sidebar="toggleSidebar"
-      :activeSlideIndex="activeSlideIndex"
-    />
+    <Header @toggle-sidebar="toggleSidebar" :activeSlideIndex="activeSlideIndex" />
     <swiper
       :modules="modules"
       :slides-per-view="1"
@@ -46,11 +43,12 @@ provide("globalData", globalData);
 </template>
 
 <style>
+@import "swiper/css";
+@import "swiper/css/mousewheel";
+
 .mySwiper {
   height: 100vh;
 }
-@import "swiper/css";
-@import "swiper/css/mousewheel";
 
 .swiper {
   width: 100%;

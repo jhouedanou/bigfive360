@@ -3,34 +3,34 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, getQuery as getQuery$1, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, setHeader, getHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, readBody, getResponseStatusText } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/devalue/index.js';
-import destr from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, hasProtocol, withHttps, withoutProtocol, withLeadingSlash, withoutTrailingSlash, withBase, joinRelativeURL } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/vue/server-renderer/index.mjs';
-import { hash } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/ohash/dist/index.mjs';
-import { propsToString, renderSSRHead } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/defu/dist/defu.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, getQuery as getQuery$1, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, setHeader, getHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, readBody, getResponseStatusText } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/devalue/index.js';
+import destr from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, hasProtocol, withHttps, withoutProtocol, withLeadingSlash, withoutTrailingSlash, withBase, joinRelativeURL } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/vue/server-renderer/index.mjs';
+import { hash } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ohash/dist/index.mjs';
+import { propsToString, renderSSRHead } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/defu/dist/defu.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/radix3/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/errx/dist/index.js';
-import { isVNode, toValue, version, unref } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/vue/index.mjs';
-import devalue from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { consola, createConsola } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/errx/dist/index.js';
+import { isVNode, toValue, version, unref } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/vue/index.mjs';
+import devalue from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { fileURLToPath } from 'node:url';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/ipx/dist/index.mjs';
-import { isAbsolute } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/pathe/dist/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///Users/houedanou/Documents/GitHub/bigfive360/node_modules/@unhead/shared/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ipx/dist/index.mjs';
+import { isAbsolute } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/pathe/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const g=E(!0);return g[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=B(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const C=t==="test"||n(s.TEST);n(s.MINIMAL)||T||C||!R;const a=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||a)&&s.TERM!=="dumb"||T);const _=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(_?.split(".")[0])||null;const W=globalThis.process||Object.create(null),c={versions:{}};new Proxy(W,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const A=globalThis.process?.release?.name==="node",L=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,u=globalThis.navigator?.userAgent==="Cloudflare-Workers",b=!!globalThis.__lagon__,F=[[S,"netlify"],[N,"edge-light"],[u,"workerd"],[O,"fastly"],[D,"deno"],[L,"bun"],[A,"node"],[b,"lagon"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const P=G();P?.name||"";
 
@@ -180,7 +180,7 @@ const _inlineRuntimeConfig = {
     "debug": false
   },
   "nuxt-robots": {
-    "version": "4.0.1",
+    "version": "4.0.2",
     "usingNuxtContent": false,
     "debug": false,
     "credits": true,
@@ -201,7 +201,7 @@ const _inlineRuntimeConfig = {
     "cacheControl": "max-age=14400, must-revalidate"
   },
   "nuxt-simple-robots": {
-    "version": "4.0.1",
+    "version": "4.0.2",
     "usingNuxtContent": false,
     "debug": false,
     "credits": true,
@@ -225,7 +225,9 @@ const _inlineRuntimeConfig = {
     "baseURL": "/_ipx",
     "alias": {},
     "fs": {
-      "dir": []
+      "dir": [
+        "/Users/bigfiveproduction/bigfive360/bigfive360/public"
+      ]
     },
     "http": {
       "domains": []
@@ -287,7 +289,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/houedanou/Documents/GitHub/bigfive360/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/bigfiveproduction/bigfive360/bigfive360/server/assets"}];
 
 const assets = createStorage();
 
@@ -299,11 +301,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/houedanou/Documents/GitHub/bigfive360","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/houedanou/Documents/GitHub/bigfive360/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/houedanou/Documents/GitHub/bigfive360/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/houedanou/Documents/GitHub/bigfive360/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/houedanou/Documents/GitHub/bigfive360/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/bigfiveproduction/bigfive360/bigfive360","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/bigfiveproduction/bigfive360/bigfive360/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/bigfiveproduction/bigfive360/bigfive360/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/bigfiveproduction/bigfive360/bigfive360/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/bigfiveproduction/bigfive360/bigfive360/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -753,20 +755,20 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _Ch4Wh1etod = (function(nitro) {
+const _sjpzcApQRI = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "/Users/houedanou/Documents/GitHub/bigfive360";
+const rootDir = "/Users/bigfiveproduction/bigfive360/bigfive360";
 
 const devReducers = {
   VNode: (data) => isVNode(data) ? { type: data.type, props: data.props } : void 0,
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _8OIH3rtfMm = (nitroApp) => {
+const _hKtOlDLe9n = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1213,7 +1215,7 @@ function publicAssetsURL(...path) {
   return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
 
-const _2nSJBgFLKS = defineNitroPlugin(async (nitroApp) => {
+const _LLLaqMdRfw = defineNitroPlugin(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", async (ctx, { event }) => {
     const routeOptions = getRouteRules(event);
     const isIsland = process.env.NUXT_COMPONENT_ISLANDS && event.path.startsWith("/__nuxt_island");
@@ -1240,23 +1242,34 @@ async function resolveRobotsTxtContext(e, nitro = useNitroApp()) {
   return generateRobotsTxtCtx;
 }
 
-const _xP2y0ti8Go = defineNitroPlugin(async (nitroApp) => {
+const logger = createConsola({
+  defaults: { tag: "@nuxtjs/robots" }
+});
+
+const _uqvshjjTsl = defineNitroPlugin(async (nitroApp) => {
   const { usingNuxtContent, robotsDisabledValue } = useRuntimeConfig()["nuxt-robots"];
   nitroApp._robots = {};
   await resolveRobotsTxtContext(void 0, nitroApp);
   const nuxtContentUrls = /* @__PURE__ */ new Set();
   if (usingNuxtContent) {
-    const urls = await (await nitroApp.localFetch("/__robots__/nuxt-content.json", {})).json();
-    urls.forEach((url) => nuxtContentUrls.add(withoutTrailingSlash(url)));
+    let urls;
+    try {
+      urls = await (await nitroApp.localFetch("/__robots__/nuxt-content.json", {})).json();
+    } catch (e) {
+      logger.error("Failed to read robot rules from content files.", e);
+    }
+    if (urls && Array.isArray(urls) && urls.length) {
+      urls.forEach((url) => nuxtContentUrls.add(withoutTrailingSlash(url)));
+    }
   }
   nitroApp._robots.nuxtContentUrls = nuxtContentUrls;
 });
 
 const plugins = [
-  _Ch4Wh1etod,
-_8OIH3rtfMm,
-_2nSJBgFLKS,
-_xP2y0ti8Go
+  _sjpzcApQRI,
+_hKtOlDLe9n,
+_LLLaqMdRfw,
+_uqvshjjTsl
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -1319,7 +1332,7 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const _MgbxN7 = defineEventHandler(async (e) => {
+const _ss3ggz = defineEventHandler(async (e) => {
   if (e.context.siteConfig)
     return;
   const runtimeConfig = useRuntimeConfig(e);
@@ -1367,7 +1380,7 @@ const _MgbxN7 = defineEventHandler(async (e) => {
   e.context.siteConfig = ctx.siteConfig;
 });
 
-const _2mbHf6 = defineEventHandler(async (e) => {
+const _lis28M = defineEventHandler(async (e) => {
   const siteConfig = useSiteConfig(e);
   const nitroOrigin = useNitroOrigin(e);
   const runtimeConfig = useRuntimeConfig(e);
@@ -1381,7 +1394,7 @@ const _2mbHf6 = defineEventHandler(async (e) => {
   };
 });
 
-const _gcsMPs = defineEventHandler(async (e) => {
+const _YFJEhz = defineEventHandler(async (e) => {
   const nitro = useNitroApp();
   const { indexable, hints } = getSiteRobotConfig(e);
   const { credits, usingNuxtContent, cacheControl } = useRuntimeConfig(e)["nuxt-robots"];
@@ -1436,7 +1449,7 @@ const _gcsMPs = defineEventHandler(async (e) => {
   return hookCtx.robotsTxt;
 });
 
-const _Hia1G9 = defineEventHandler(async (e) => {
+const _OGuw4i = defineEventHandler(async (e) => {
   if (e.path === "/robots.txt" || e.path.startsWith("/__") || e.path.startsWith("/api") || e.path.startsWith("/_nuxt"))
     return;
   const robotConfig = getPathRobotConfig(e);
@@ -1444,7 +1457,7 @@ const _Hia1G9 = defineEventHandler(async (e) => {
   e.context.robots = robotConfig;
 });
 
-const _ERnGjE = defineEventHandler(async (e) => {
+const _3OoioM = defineEventHandler(async (e) => {
   const runtimeConfig = useRuntimeConfig(e)["nuxt-robots"];
   const { indexable, hints } = await getSiteRobotConfig(e);
   const siteConfig = useSiteConfig(e);
@@ -1464,7 +1477,7 @@ const _ERnGjE = defineEventHandler(async (e) => {
   };
 });
 
-const _iFKqxG = defineEventHandler(async (e) => {
+const _qQlxPO = defineEventHandler(async (e) => {
   const path = getQuery$1(e).path;
   return await getPathRobotConfig(e, {
     path
@@ -1596,7 +1609,7 @@ function useSimpleSitemapRuntimeConfig() {
   return Object.freeze(clone);
 }
 
-const _U6uNKw = defineEventHandler(async (e) => {
+const _OAYyXt = defineEventHandler(async (e) => {
   const _runtimeConfig = useSimpleSitemapRuntimeConfig();
   const { sitemaps: _sitemaps } = _runtimeConfig;
   const runtimeConfig = { ..._runtimeConfig };
@@ -1618,7 +1631,7 @@ const _U6uNKw = defineEventHandler(async (e) => {
   };
 });
 
-const _o07rAO = defineEventHandler(async (e) => {
+const _xSwQzd = defineEventHandler(async (e) => {
   setHeader(e, "Content-Type", "application/xslt+xml");
   const fixPath = createSitePathResolver(e, { absolute: false, withBase: true });
   const { sitemapName: fallbackSitemapName, version, xslColumns, xslTips } = useSimpleSitemapRuntimeConfig();
@@ -2407,7 +2420,7 @@ async function createSitemap(e, definition) {
   return sitemap;
 }
 
-const _1f9ODg = defineEventHandler(async (e) => {
+const _hFHJ0S = defineEventHandler(async (e) => {
   const { sitemaps } = useSimpleSitemapRuntimeConfig();
   if ("index" in sitemaps) {
     return sendRedirect(e, withBase("/sitemap_index.xml", useRuntimeConfig().app.baseURL), 302 );
@@ -2415,7 +2428,7 @@ const _1f9ODg = defineEventHandler(async (e) => {
   return createSitemap(e, Object.values(sitemaps)[0]);
 });
 
-const _BYSyNk = lazyEventHandler(() => {
+const _ExUVlX = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -2433,21 +2446,21 @@ const _BYSyNk = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_kN05kR = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_7yolId = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_kN05kR, lazy: true, middleware: false, method: undefined },
-  { route: '', handler: _MgbxN7, lazy: false, middleware: true, method: undefined },
-  { route: '/__site-config__/debug.json', handler: _2mbHf6, lazy: false, middleware: false, method: undefined },
-  { route: '/robots.txt', handler: _gcsMPs, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _Hia1G9, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug.json', handler: _ERnGjE, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug-path.json', handler: _iFKqxG, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/debug.json', handler: _U6uNKw, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/style.xsl', handler: _o07rAO, lazy: false, middleware: false, method: undefined },
-  { route: '/sitemap.xml', handler: _1f9ODg, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _BYSyNk, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_kN05kR, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_7yolId, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _ss3ggz, lazy: false, middleware: true, method: undefined },
+  { route: '/__site-config__/debug.json', handler: _lis28M, lazy: false, middleware: false, method: undefined },
+  { route: '/robots.txt', handler: _YFJEhz, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _OGuw4i, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug.json', handler: _3OoioM, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug-path.json', handler: _qQlxPO, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/debug.json', handler: _OAYyXt, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/style.xsl', handler: _xSwQzd, lazy: false, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _hFHJ0S, lazy: false, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _ExUVlX, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_7yolId, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -2748,8 +2761,8 @@ const appTeleportAttrs = {"id":"teleports"};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file:///Users/houedanou/Documents/GitHub/bigfive360/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file:///Users/houedanou/Documents/GitHub/bigfive360/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file:///Users/bigfiveproduction/bigfive360/bigfive360/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file:///Users/bigfiveproduction/bigfive360/bigfive360/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();

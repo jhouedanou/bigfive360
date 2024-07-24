@@ -101,6 +101,9 @@
       "public": [
         "../public"
       ],
+      "public/*": [
+        "../public/*"
+      ],
       "#image": [
         "../node_modules/@nuxt/image/dist/runtime"
       ],
