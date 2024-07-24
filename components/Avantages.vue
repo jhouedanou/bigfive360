@@ -4,10 +4,7 @@
       <h2 class="section-title">{{ globalData?.avantages.headline }}</h2>
       <div id="listeavantages">
         <ul>
-          <li
-            v-for="(item, index) in globalData?.avantages.listes"
-            :key="index"
-          >
+          <li v-for="(item, index) in globalData?.avantages.listes" :key="index">
             {{ item }}
           </li>
         </ul>

@@ -1,31 +1,3 @@
-<template>
-  <div id="services">
-    <div class="container">
-      <h2>{{ globalData?.services.title }}</h2>
-      <p>{{ globalData?.services.content }}</p>
-      <button>{{ globalData?.services.txtBtn }}</button>
-    </div>
-    <client-only>
-      <Carousel v-if="isCarouselLoaded" :items-to-show="3" :wrap-around="true">
-        <Slide
-          v-for="(service, index) in globalData?.services.service"
-          :key="index"
-        >
-          <Service
-            :titre="service.titre"
-            :image="service.image"
-            :icone="service.icone"
-          />
-        </Slide>
-        <template #addons>
-          <Navigation />
-          <Pagination />
-        </template>
-      </Carousel>
-    </client-only>
-  </div>
-</template>
-
 <script setup>
 import { ref, onMounted } from "vue";
 import Service from "./Service.vue";
@@ -44,6 +16,21 @@ onMounted(async () => {
   isCarouselLoaded.value = true;
 });
 </script>
+<template>
+  <div id="services">
+    <client-only>
+      <Carousel v-if="isCarouselLoaded" :items-to-show="3" :wrap-around="true">
+        <Slide v-for="(service, index) in globalData?.services.service" :key="index">
+          <Service :titre="service.titre" :image="service.image" :icone="service.icone" />
+        </Slide>
+        <template #addons>
+          <Navigation />
+          <Pagination />
+        </template>
+      </Carousel>
+    </client-only>
+  </div>
+</template>
 
 <style>
 @import "vue3-carousel/dist/carousel.css";

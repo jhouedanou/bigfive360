@@ -17,7 +17,13 @@ const globalData = inject("globalData");
 $primary-color: #e61d00;
 
 .hero {
-  background: url("../images/hero.webp") no-repeat center center;
+  background: url("../images/background-hero.webp") $primary-color no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   h1 {
     color: #fff;
     white-space: pre-wrap;
@@ -29,9 +35,6 @@ $primary-color: #e61d00;
     color: #fff;
     margin-top: 17px;
   }
-}
-.hero {
-  background: $primary-color !important;
 }
 .hero-body {
   padding: 0 !important;
