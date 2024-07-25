@@ -1,18 +1,41 @@
 <script setup>
+import { ref, onMounted } from "vue";
+import videojs from "video.js";
+import "video.js/dist/video-js.css";
+import "videojs-youtube";
 const globalData = inject("globalData");
+
+const videoPlayer = ref(null);
+
+onMounted(() => {
+  const player = videojs(videoPlayer.value, {
+    techOrder: ["youtube"],
+    autoplay: true,
+    muted: true,
+    loop: true,
+    controls: false,
+    sources: [
+      {
+        type: "video/youtube",
+        src: "https://www.youtube.com/watch?v=jGcPTA5ze90",
+      },
+    ],
+  });
+});
 </script>
 
 <template>
   <section id="devis" class="section is-fullheight secondary-bg">
-    <div id="demo" class="container">
+    <div class="video-background">
+      <video ref="videoPlayer" class="video-js vjs-default-skin" preload="auto"></video>
+    </div>
+    <div id="demopbdfs" class="container">
       <div class="columns">
         <div class="column is-half">
           <ContactForm />
         </div>
         <div class="column">
-          <h3>{{ globalData?.demo.introForm }}</h3>
-          <h4>{{ globalData?.demo.text }}</h4>
-          <h1 class="title is-1">{{ globalData?.demo.text }}</h1>
+          <h1>{{ globalData?.demo.introForm }}</h1>
         </div>
       </div>
     </div>
@@ -45,6 +68,40 @@ const globalData = inject("globalData");
     margin-top: 19px !important;
     margin-bottom: 20px !important;
     color: black;
+  }
+}
+#devis {
+  position: relative;
+  overflow: hidden;
+}
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  .video-js {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+#demopbdfs {
+  h1 {
+    color: #ffffff;
+    font-family: Work Sans, sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 53px !important;
+    line-height: 59px !important;
+    padding-bottom: 13px;
+    margin-bottom: 23px !important;
+    border-bottom: 1px #e61d00 solid;
+    display: inline-block;
+    position: relative;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
   }
 }
 </style>

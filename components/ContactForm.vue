@@ -199,4 +199,13 @@ const submitForm = async () => {
 .is-invalid {
   border-color: red;
 }
+.box {
+  width: 100%;
+}
+button {
+  background: red;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+}
 </style>

@@ -35,4 +35,3 @@ export { createSitePathResolver, withSiteTrailingSlash, withSiteUrl } from '../n
 export { defineRobotMeta } from '../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/defineRobotMeta';
 export { useRobotsRule } from '../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/useRobotsRule';
 export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';

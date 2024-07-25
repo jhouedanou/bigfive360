@@ -1,3 +1,6 @@
+<script setup>
+const globalData = inject("globalData");
+</script>
 <template>
   <section class="hero is-link is-fullheight-with-navbar">
     <div class="hero-body">
@@ -11,9 +14,7 @@
     </div>
   </section>
 </template>
-<script setup>
-const globalData = inject("globalData");
-</script>
+
 <style scoped lang="scss">
 $primary-color: #e61d00;
 
