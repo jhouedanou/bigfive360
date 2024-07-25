@@ -5,6 +5,17 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/pagination";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+onMounted(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 50,
+  });
+});
+
 const activeSlideIndex = ref(0);
 const sidebarOpen = ref(false);
 const toggleSidebar = () => {
@@ -38,7 +49,7 @@ provide("globalData", globalData);
       <swiper-slide><NosServices /></swiper-slide>
       <swiper-slide><Options /></swiper-slide>
       <swiper-slide><Ccm /></swiper-slide>
-      <swiper-slide><Demo /></swiper-slide>
+      <swiper-slide><Devis /></swiper-slide>
     </swiper>
   </div>
 </template>

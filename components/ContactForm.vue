@@ -67,13 +67,9 @@ const submitForm = async () => {
 </script>
 <template>
   <div id="demo" class="container">
-    <h1 class="title is-1">{{ globalData?.demo.text }}</h1>
     <div
       v-if="formStatus.message"
-      :class="[
-        'notification',
-        formStatus.isSuccess ? 'is-success' : 'is-danger',
-      ]"
+      :class="['notification', formStatus.isSuccess ? 'is-success' : 'is-danger']"
     >
       {{ formStatus.message }}
     </div>
@@ -171,11 +167,7 @@ const submitForm = async () => {
 
       <div class="field">
         <div class="control">
-          <button
-            type="submit"
-            class="button is-primary"
-            :disabled="isSubmitting"
-          >
+          <button type="submit" class="button is-primary" :disabled="isSubmitting">
             <span v-if="!isSubmitting">Envoyer</span>
             <span v-else class="loader"></span>
           </button>

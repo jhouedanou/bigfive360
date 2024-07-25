@@ -10,7 +10,8 @@ const globalData = inject("globalData");
         <h4 class="section-title-alt">Options</h4>
         <ul>
           <li
-            v-for="(services_principal, index) in globalData?.options.services_principaux"
+            v-for="(services_principal, index) in globalData?.options
+              .services_principaux"
             :key="index"
           >
             {{ services_principal }}

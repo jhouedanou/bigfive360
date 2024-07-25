@@ -3,13 +3,17 @@ const globalData = inject("globalData");
 </script>
 
 <template>
-  <section id="demo" class="section is-fullheight secondary-bg">
-    <div id="nanada" class="white-bg">
-      <div class="container">
-        <h4>{{ globalData?.demo.text }}</h4>
-        <button class="lebtn-alt">
-          <span>{{ globalData?.demo.btn }}</span>
-        </button>
+  <section id="devis" class="section is-fullheight secondary-bg">
+    <div id="demo" class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <ContactForm />
+        </div>
+        <div class="column">
+          <h3>{{ globalData?.demo.introForm }}</h3>
+          <h4>{{ globalData?.demo.text }}</h4>
+          <h1 class="title is-1">{{ globalData?.demo.text }}</h1>
+        </div>
       </div>
     </div>
   </section>

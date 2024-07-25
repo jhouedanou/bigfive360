@@ -100,6 +100,9 @@ $itemHeight: 380px !important;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  iframe {
+    position: absolute;
+  }
 }
 
 .popup-content {
@@ -107,7 +110,7 @@ $itemHeight: 380px !important;
   width: 90%;
   max-width: 800px;
   height: 80vh;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 8px;
   overflow: hidden;
 }

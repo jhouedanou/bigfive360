@@ -6,7 +6,8 @@
   "hero": {
     "title": "BigFive360",
     "subtitle": "Accélérez vos ventes et\nlocations immobilières\ngrâce aux contenus 360°",
-    "txtBtn": "Découvrir"
+    "txtBtn": "Découvrir",
+    "logo": "/images/logo.svg"
   },
   "avantages": {
     "headline": "Augmentez l’audience\nde vos annonces immobilières",
@@ -44,7 +45,7 @@
       "action": "DÉCOUVRIR",
       "icone": "/images/retouche.svg",
       "preview": "/images/retouche-preview.webp",
-      "lien": ""
+      "lien": "https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=afb81d5a-4a99-11ef-9396-d93975fe8866"
     }
   ],
   "technologie": {

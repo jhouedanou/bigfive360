@@ -2,6 +2,7 @@
   <section class="hero is-link is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">
+        <img :src="globalData?.hero.logo" class="logo" />
         <h1 class="title">{{ globalData?.hero.subtitle }}</h1>
         <button class="lebtn">
           <span>{{ globalData?.hero.txtBtn }}</span>

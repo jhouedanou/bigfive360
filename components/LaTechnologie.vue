@@ -5,7 +5,11 @@
         <h2 class="section-title">{{ globalData?.technologie.title }}</h2>
         <p>{{ globalData?.technologie.content }}</p>
         <p>{{ globalData?.technologie.content2 }}</p>
-        <NuxtImg :src="globalData?.technologie.logo" format="webp" quality="80" />
+        <NuxtImg
+          :src="globalData?.technologie.logo"
+          format="webp"
+          quality="80"
+        />
       </div>
     </div>
   </section>

@@ -63,14 +63,13 @@ const globalData = inject("globalData");
 }
 #notreoffre {
   .container {
-    padding: 0;
     margin: 0;
     .section-title {
       margin: 0 !important;
       padding: 0 !important;
       position: absolute;
       top: 70px;
-      left: 0;
+      left: 1em;
     }
   }
 }

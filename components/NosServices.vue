@@ -51,7 +51,11 @@ onMounted(() => {
           v-for="(service, index) in globalData?.services.service"
           :key="index"
         >
-          <Service :titre="service.titre" :image="service.image" :icone="service.icone" />
+          <Service
+            :titre="service.titre"
+            :image="service.image"
+            :icone="service.icone"
+          />
         </SwiperSlide>
       </Swiper>
     </client-only>
