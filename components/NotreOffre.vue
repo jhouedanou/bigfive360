@@ -1,13 +1,15 @@
 <template>
   <section id="notreoffre" class="is-fullheight white-bg">
     <div class="container">
-      <h2 class="section-title">{{ globalData?.notreOffre }}</h2>
+      <div id="offrewrapper">
+        <h2 class="section-title">{{ globalData?.notreOffre }}</h2>
+      </div>
       <swiper
         :slides-per-view="1"
         :space-between="30"
-        :navigation="false"
+        :navigation="true"
         :pagination="{ clickable: true }"
-        :autoplay="{ delay: 10000, disableOnInteraction: true }"
+        :autoplay="{ delay: 5000, disableOnInteraction: true }"
         :modules="[Navigation, Pagination, Autoplay]"
         class="mySwiper"
       >

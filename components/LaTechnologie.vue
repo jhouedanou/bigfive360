@@ -8,14 +8,6 @@
         <NuxtImg :src="globalData?.technologie.logo" format="webp" quality="80" />
       </div>
     </div>
-
-    <div id="serviceintro" class="primary-bg">
-      <div class="container section">
-        <h2 class="section-title">{{ globalData?.services.title }}</h2>
-        <p>{{ globalData?.services.content }}</p>
-        <button>{{ globalData?.services.txtBtn }}</button>
-      </div>
-    </div>
   </section>
 </template>
 
@@ -30,9 +22,18 @@ const globalData = inject("globalData");
   padding: 0;
 }
 #techcontainer {
-  height: 60vh;
   min-height: 500px;
   display: flex;
+  height: 100vh;
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    img {
+      width: 290px;
+    }
+  }
   p {
     color: black;
     line-height: 1.4;
@@ -45,7 +46,6 @@ const globalData = inject("globalData");
   }
 }
 #serviceintro {
-  height: 40vh;
   min-height: 500px;
   line-height: 1.25;
 }

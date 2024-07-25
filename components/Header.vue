@@ -41,11 +41,7 @@ onUnmounted(() => {
         <li><a href="#!">Contact</a></li>
       </ul>
     </div>
-    <div
-      class="sidebar-overlay"
-      v-if="isSidebarOpen"
-      @click="toggleSidebar"
-    ></div>
+    <div class="sidebar-overlay" v-if="isSidebarOpen" @click="toggleSidebar"></div>
 
     <!-- le content de la navbar -->
     <div id="vangogh" class="columns">
@@ -125,7 +121,8 @@ header {
     right: 0;
   }
   &.slide-active-1,
-  &.slide-active-2 {
+  &.slide-active-2,
+  &.slide-active-3 {
     background-color: #fff !important;
     transition: all 0.3s ease;
     * {

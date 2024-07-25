@@ -1,16 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const props = defineProps([
-  "description",
-  "type",
-  "action",
-  "icone",
-  "lien",
-  "preview",
-  "imageBefore",
-  "imageAfter",
-]);
+const props = defineProps(["description", "type", "action", "icone", "lien", "preview"]);
 const isPopupOpen = ref(false);
 
 const openPopup = () => {
@@ -19,12 +10,6 @@ const openPopup = () => {
 
 const closePopup = () => {
   isPopupOpen.value = false;
-};
-
-const updateSlider = (event) => {
-  const sliderPos = event.target.value;
-  const beforeImage = document.querySelector(".before-image");
-  beforeImage.style.clipPath = `inset(0 ${100 - sliderPos}% 0 0)`;
 };
 </script>
 <template>
@@ -36,7 +21,6 @@ const updateSlider = (event) => {
         </div>
         <div class="column visite-detail is-flex-grow-1">
           <NuxtImg class="icone" :src="icone" format="webp" quality="80" />
-          {{ imageAfter }}
           <h3>{{ type }}</h3>
           <p>{{ description }}</p>
           <button class="lebtn btnstyle">
@@ -49,22 +33,8 @@ const updateSlider = (event) => {
       <div v-if="isPopupOpen" class="popup-overlay" @click.self="closePopup">
         <div class="popup-content">
           <button class="close-button" @click="closePopup">&times;</button>
-          <div
-            v-if="!lien && imageBefore && imageAfter && imageAfter !== ''"
-            class="comparison-slider"
-          >
-            <img :src="imageBefore" alt="Before" class="before-image" />
-            <img :src="imageAfter" alt="After" class="after-image" />
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value="50"
-              class="slider"
-              @input="updateSlider"
-            />
-          </div>
-          <iframe v-else-if="lien" :src="lien" frameborder="0" allowfullscreen></iframe>
+
+          <iframe :src="lien" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </Teleport>
@@ -72,13 +42,16 @@ const updateSlider = (event) => {
 </template>
 
 <style scoped lang="scss">
+$itemHeight: 380px !important;
+
 .swiper-pagination-bullet {
   background-color: #e61d00 !important;
 }
 .visite-item {
   background-color: #1d1d1d;
   margin: 80px auto 0;
-  max-width: 90vw;
+  max-width: 1150px;
+  max-height: 595px;
   .visite-visuel {
     img {
       width: 100%;
@@ -93,6 +66,7 @@ const updateSlider = (event) => {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    padding: 4em;
     .icone {
       position: absolute;
       top: -45px;

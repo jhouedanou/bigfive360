@@ -261,3 +261,49 @@ body {
         margin: 0 0 10px 0;
     }
 }
+#notreoffre {
+    .swiper-pagination-bullet {
+        background-color: #e61d00 !important;
+    }
+}
+#caro {
+    .swiper-slide {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+.swiper-button-next,
+.swiper-button-prev {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 57px !important;
+    background: rgba(0, 0, 0, 0) !important;
+    border: 2px #fff solid !important;
+    width: 50px !important;
+    height: 50px !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
+    &::after {
+        font-size: 15px !important;
+    }
+
+    &:hover {
+        border-color: #e61d00 !important;
+        background: #e61d00 !important;
+        color: white !important;
+    }
+
+    &::after {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}

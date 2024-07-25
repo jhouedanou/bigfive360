@@ -27,6 +27,7 @@ provide("globalData", globalData);
       direction="vertical"
       :mousewheel="true"
       :pagination="{ clickable: true }"
+      :autoplay="{ delay: 5000, disableOnInteraction: true }"
       class="mySwiper"
       @slideChange="(swiper) => (activeSlideIndex = swiper.activeIndex)"
     >
