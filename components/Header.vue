@@ -122,7 +122,8 @@ header {
   }
   &.slide-active-1,
   &.slide-active-2,
-  &.slide-active-3 {
+  &.slide-active-3,
+  &.slide-active-5 {
     background-color: #fff !important;
     transition: all 0.3s ease;
     * {

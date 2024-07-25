@@ -230,7 +230,20 @@ body {
     border-bottom: 1px #e61d00 solid;
     display: inline-block;
     position: relative;
+    white-space: pre-wrap;
+}
 
+.section-title-alt {
+    color: #e61d00;
+    font-family: "Work Sans", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    line-height: 45px !important;
+    padding-bottom: 13px;
+    margin-bottom: 23px !important;
+    border-bottom: 1px #e61d00 solid;
+    display: inline-block;
+    position: relative;
     white-space: pre-wrap;
 }
 .section {
