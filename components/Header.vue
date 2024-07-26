@@ -41,11 +41,15 @@ onUnmounted(() => {
         <li><a href="#!">Contact</a></li>
       </ul>
     </div>
-    <div class="sidebar-overlay" v-if="isSidebarOpen" @click="toggleSidebar"></div>
+    <div
+      class="sidebar-overlay"
+      v-if="isSidebarOpen"
+      @click="toggleSidebar"
+    ></div>
 
     <!-- le content de la navbar -->
-    <div id="vangogh" class="columns">
-      <div id="natalia" class="column is-half m-0 p-0">
+    <div id="vangogh" class="columns is-mobile is-multiline">
+      <div id="natalia" class="column is-half is-2-mobile m-0 p-0">
         <div class="navbar-brand">
           <a class="navbar-item" @click="toggleSidebar">
             <span class="material-icons">menu</span>
@@ -53,13 +57,13 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <div id="natavia" class="column is-half">
-        <div class="navbar-end">
-          <a class="navbar-item">
+      <div id="natavia" class="column is-10-mobile is-half">
+        <div class="navbar-end is-mobile is-multiline">
+          <a class="navbar-item is-4-mobile">
             <span class="material-icons">phone</span>
             {{ globalData?.navbar.numero }}
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item is-8-mobile">
             <span class="material-icons">email</span>
           </a>
         </div>

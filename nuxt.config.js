@@ -47,6 +47,12 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
+    publicAssets: [
+      {
+        dir: '_ipx/f_webp&q_80/images',
+        maxAge: 60 * 60 * 24 * 365 // 1 an
+      }
+    ],
     prerender: {
       crawlLinks: true,
       routes: ['/']

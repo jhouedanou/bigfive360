@@ -10,6 +10,67 @@
 $primary-color: #e61d00;
 $secondary-color: #e5e5e5;
 $white-color: #fff;
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    $fontsize: 1em !important;
+    $titre: 1.25em !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: $titre !important;
+    }
+    p {
+        font-size: $fontsize;
+    }
+
+    .section-title,
+    .title {
+        font-size: $titre !important;
+    }
+    .navbar-end.is-mobile.is-multiline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #vangogh #natavia .navbar-item:nth-of-type(2) span {
+        font-size: $fontsize;
+    }
+    #vangogh #natavia .navbar-item:nth-of-type(1) .material-icons {
+        top: 4px !important;
+        font-size: $fontsize;
+    }
+    .hero {
+        padding: 2em !important;
+        h1 {
+            font-size: $titre !important;
+        }
+    }
+    #vangogh #natavia .navbar-item:nth-of-type(1) {
+        font-size: $fontsize;
+    }
+}
+
 .secondary-bg {
     background-color: $secondary-color;
 }
@@ -379,6 +440,4 @@ body {
 #caro {
     position: absolute;
     bottom: 49px;
-}
-section {
 }
