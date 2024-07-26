@@ -5,16 +5,6 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/pagination";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-onMounted(() => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 50,
-  });
-});
 
 const activeSlideIndex = ref(0);
 const sidebarOpen = ref(false);

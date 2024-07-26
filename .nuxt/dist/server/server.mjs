@@ -4,7 +4,7 @@ import { baseURL } from "#internal/nuxt/paths";
 import { createHooks } from "hookable";
 import { getContext } from "unctx";
 import { sanitizeStatusCode, createError as createError$1, appendHeader } from "h3";
-import { hasProtocol, isScriptProtocol, joinURL, withQuery, isEqual, stringifyParsedURL, stringifyQuery, parseQuery, withLeadingSlash, parseURL, encodePath, encodeParam } from "ufo";
+import { hasProtocol, isScriptProtocol, joinURL, withQuery, isEqual, stringifyParsedURL, stringifyQuery, parseQuery, withLeadingSlash, parseURL, encodeParam, encodePath } from "ufo";
 import { getActiveHead, CapoPlugin } from "unhead";
 import { defineHeadPlugin, composableNames } from "@unhead/shared";
 import { toRouteMatcher, createRouter } from "radix3";
@@ -1494,7 +1494,7 @@ const getImage = (src, { modifiers = {}, baseURL: baseURL2 } = {}, ctx) => {
 };
 const validateDomains = true;
 const supportsAlias = true;
-const ipxStaticRuntime$31CngAUw2V = /* @__PURE__ */ Object.freeze({
+const ipxRuntime$Y22px7rZID = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   getImage,
   supportsAlias,
@@ -1511,7 +1511,7 @@ const imageOptions = {
     "2xl": 1536
   },
   "presets": {},
-  "provider": "ipxStatic",
+  "provider": "ipx",
   "domains": [],
   "alias": {},
   "densities": [
@@ -1523,7 +1523,7 @@ const imageOptions = {
   ]
 };
 imageOptions.providers = {
-  ["ipxStatic"]: { provider: ipxStaticRuntime$31CngAUw2V, defaults: {} }
+  ["ipx"]: { provider: ipxRuntime$Y22px7rZID, defaults: {} }
 };
 const useImage = () => {
   const config = /* @__PURE__ */ useRuntimeConfig();
