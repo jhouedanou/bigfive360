@@ -45,8 +45,8 @@ provide("globalData", globalData);
 </template>
 
 <style>
-@import "swiper/css";
-@import "swiper/css/mousewheel";
+/* @import "swiper/css";
+@import "swiper/css/mousewheel"; */
 
 .mySwiper {
   height: 100vh;
