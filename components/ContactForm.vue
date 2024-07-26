@@ -201,6 +201,7 @@ const submitForm = async () => {
 }
 .box {
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.85) !important;
 }
 button {
   background: red;

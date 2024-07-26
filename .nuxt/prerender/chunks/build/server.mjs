@@ -1494,7 +1494,7 @@ const getImage = (src, { modifiers = {}, baseURL: baseURL2 } = {}, ctx) => {
 };
 const validateDomains = true;
 const supportsAlias = true;
-const ipxRuntime$Y22px7rZID = /* @__PURE__ */ Object.freeze({
+const ipxStaticRuntime$31CngAUw2V = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   getImage,
   supportsAlias,
@@ -1511,7 +1511,7 @@ const imageOptions = {
     "2xl": 1536
   },
   "presets": {},
-  "provider": "ipx",
+  "provider": "ipxStatic",
   "domains": [],
   "alias": {},
   "densities": [
@@ -1523,7 +1523,7 @@ const imageOptions = {
   ]
 };
 imageOptions.providers = {
-  ["ipx"]: { provider: ipxRuntime$Y22px7rZID, defaults: {} }
+  ["ipxStatic"]: { provider: ipxStaticRuntime$31CngAUw2V, defaults: {} }
 };
 const useImage = () => {
   const config = /* @__PURE__ */ useRuntimeConfig();
@@ -1985,17 +1985,17 @@ const _sfc_main$4 = {
       _push(`<div${ssrRenderAttrs(mergeProps({
         id: "demo",
         class: "container"
-      }, _attrs))} data-v-1277d430>`);
+      }, _attrs))} data-v-79bbbf15>`);
       if (formStatus.value.message) {
-        _push(`<div class="${ssrRenderClass(["notification", formStatus.value.isSuccess ? "is-success" : "is-danger"])}" data-v-1277d430>${ssrInterpolate(formStatus.value.message)}</div>`);
+        _push(`<div class="${ssrRenderClass(["notification", formStatus.value.isSuccess ? "is-success" : "is-danger"])}" data-v-79bbbf15>${ssrInterpolate(formStatus.value.message)}</div>`);
       } else {
         _push(`<!---->`);
       }
-      _push(`<form class="box" data-v-1277d430><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Prénom</label><div class="control" data-v-1277d430><input${ssrRenderAttr("value", form.value.prenom)} class="${ssrRenderClass([{ "is-danger": unref(v$).prenom.$error }, "input"])}" type="text" placeholder="Prénom" data-v-1277d430></div></div><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Nom</label><div class="control" data-v-1277d430><input${ssrRenderAttr("value", form.value.nom)} class="${ssrRenderClass([{ "is-danger": unref(v$).nom.$error }, "input"])}" type="text" placeholder="Nom" data-v-1277d430></div></div><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Email</label><div class="control" data-v-1277d430><input${ssrRenderAttr("value", form.value.email)} class="${ssrRenderClass([{ "is-danger": unref(v$).email.$error }, "input"])}" type="email" placeholder="Email" data-v-1277d430></div></div><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Téléphone</label><div class="control" data-v-1277d430><input${ssrRenderAttr("value", form.value.telephone)} class="${ssrRenderClass([{ "is-danger": unref(v$).telephone.$error }, "input"])}" type="tel" placeholder="Téléphone" data-v-1277d430></div></div><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Société</label><div class="control" data-v-1277d430><input${ssrRenderAttr("value", form.value.societe)} class="${ssrRenderClass([{ "is-danger": unref(v$).societe.$error }, "input"])}" type="text" placeholder="Société" data-v-1277d430></div></div><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Secteur d&#39;activité</label><div class="control" data-v-1277d430><input${ssrRenderAttr("value", form.value.secteur)} class="${ssrRenderClass([{ "is-danger": unref(v$).secteur.$error }, "input"])}" type="text" placeholder="Secteur d&#39;activité" data-v-1277d430></div></div><div class="field" data-v-1277d430><label class="label" data-v-1277d430>Message</label><div class="control" data-v-1277d430><textarea class="${ssrRenderClass([{ "is-danger": unref(v$).message.$error }, "textarea"])}" placeholder="Message" data-v-1277d430>${ssrInterpolate(form.value.message)}</textarea></div></div><div class="field" data-v-1277d430><div class="control" data-v-1277d430><button type="submit" class="button is-primary"${ssrIncludeBooleanAttr(isSubmitting.value) ? " disabled" : ""} data-v-1277d430>`);
+      _push(`<form class="box" data-v-79bbbf15><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Prénom</label><div class="control" data-v-79bbbf15><input${ssrRenderAttr("value", form.value.prenom)} class="${ssrRenderClass([{ "is-danger": unref(v$).prenom.$error }, "input"])}" type="text" placeholder="Prénom" data-v-79bbbf15></div></div><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Nom</label><div class="control" data-v-79bbbf15><input${ssrRenderAttr("value", form.value.nom)} class="${ssrRenderClass([{ "is-danger": unref(v$).nom.$error }, "input"])}" type="text" placeholder="Nom" data-v-79bbbf15></div></div><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Email</label><div class="control" data-v-79bbbf15><input${ssrRenderAttr("value", form.value.email)} class="${ssrRenderClass([{ "is-danger": unref(v$).email.$error }, "input"])}" type="email" placeholder="Email" data-v-79bbbf15></div></div><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Téléphone</label><div class="control" data-v-79bbbf15><input${ssrRenderAttr("value", form.value.telephone)} class="${ssrRenderClass([{ "is-danger": unref(v$).telephone.$error }, "input"])}" type="tel" placeholder="Téléphone" data-v-79bbbf15></div></div><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Société</label><div class="control" data-v-79bbbf15><input${ssrRenderAttr("value", form.value.societe)} class="${ssrRenderClass([{ "is-danger": unref(v$).societe.$error }, "input"])}" type="text" placeholder="Société" data-v-79bbbf15></div></div><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Secteur d&#39;activité</label><div class="control" data-v-79bbbf15><input${ssrRenderAttr("value", form.value.secteur)} class="${ssrRenderClass([{ "is-danger": unref(v$).secteur.$error }, "input"])}" type="text" placeholder="Secteur d&#39;activité" data-v-79bbbf15></div></div><div class="field" data-v-79bbbf15><label class="label" data-v-79bbbf15>Message</label><div class="control" data-v-79bbbf15><textarea class="${ssrRenderClass([{ "is-danger": unref(v$).message.$error }, "textarea"])}" placeholder="Message" data-v-79bbbf15>${ssrInterpolate(form.value.message)}</textarea></div></div><div class="field" data-v-79bbbf15><div class="control" data-v-79bbbf15><button type="submit" class="button is-primary"${ssrIncludeBooleanAttr(isSubmitting.value) ? " disabled" : ""} data-v-79bbbf15>`);
       if (!isSubmitting.value) {
-        _push(`<span data-v-1277d430>Envoyer</span>`);
+        _push(`<span data-v-79bbbf15>Envoyer</span>`);
       } else {
-        _push(`<span class="loader" data-v-1277d430></span>`);
+        _push(`<span class="loader" data-v-79bbbf15></span>`);
       }
       _push(`</button></div></div></form></div>`);
     };
@@ -2007,7 +2007,7 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/ContactForm.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-1277d430"]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-79bbbf15"]]);
 const _sfc_main$3 = {
   __name: "Devis",
   __ssrInlineRender: true,
@@ -2258,8 +2258,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-Bn_eF_G9.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-BLDB5dSg.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-oloGqNAb.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-3cRiGetA.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));

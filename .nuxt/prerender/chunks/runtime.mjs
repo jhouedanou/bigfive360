@@ -69,7 +69,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "475df1ea-a92c-49b9-a55e-c9f9b1120df5",
+    "buildId": "11b4b876-6ae1-4a65-a50b-072e284ffed3",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -86,17 +86,8 @@ const _inlineRuntimeConfig = {
         }
       },
       "/sitemap.xml": {
-        "swr": 600,
-        "cache": {
-          "varies": [
-            "X-Forwarded-Host",
-            "X-Forwarded-Proto",
-            "Host"
-          ],
-          "swr": true,
-          "maxAge": 600
-        },
         "headers": {
+          "Content-Type": "text/xml; charset=UTF-8",
           "X-Robots-Tag": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         }
       },
@@ -1428,89 +1419,117 @@ const errorHandler = (async function errorhandler(error, event) {
 });
 
 const assets = {
+  "/200.html": {
+    "type": "text/html; charset=utf-8",
+    "etag": "\"b9255-J51BqjQzj8gmNkk9r1RLQhNgH+4\"",
+    "mtime": "2024-07-26T14:27:53.513Z",
+    "size": 758357,
+    "path": "../../.output/public/200.html"
+  },
+  "/404.html": {
+    "type": "text/html; charset=utf-8",
+    "etag": "\"b921a-cQx+GWakkDyiLCH5WW5Q20acotM\"",
+    "mtime": "2024-07-26T14:27:53.513Z",
+    "size": 758298,
+    "path": "../../.output/public/404.html"
+  },
   "/_payload.json": {
     "type": "application/json",
-    "etag": "\"1964-zP2+26CgKVjzR9ekRYQBP/9BzbU\"",
-    "mtime": "2024-07-26T07:27:30.262Z",
+    "etag": "\"1964-h7337OfOvlurHRud+Rs6VHvEOOs\"",
+    "mtime": "2024-07-26T14:27:53.650Z",
     "size": 6500,
     "path": "../../.output/public/_payload.json"
   },
   "/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"bd74c-sb5IpJmpo4mEwTBgvxSeomX/veY\"",
-    "mtime": "2024-07-26T07:27:30.226Z",
-    "size": 776012,
+    "etag": "\"bcae3-Qi8b1eKk6XnxrddEsn+lv5vmCQc\"",
+    "mtime": "2024-07-26T14:27:53.582Z",
+    "size": 772835,
     "path": "../../.output/public/index.html"
   },
-  "/_ipx/f_webp/images/etape1.webp": {
-    "type": "image/webp",
-    "etag": "\"281e-4rGwJf3WD77moMCJ2z4j/r/LTqI\"",
-    "mtime": "2024-07-26T07:27:30.935Z",
-    "size": 10270,
-    "path": "../../.output/public/_ipx/f_webp/images/etape1.webp"
+  "/robots.txt": {
+    "type": "text/plain; charset=utf-8",
+    "etag": "\"4b-bPa9mAG9u7QHA6c2oHn3/ZCIzMI\"",
+    "mtime": "2024-07-26T14:27:53.310Z",
+    "size": 75,
+    "path": "../../.output/public/robots.txt"
   },
-  "/_ipx/f_webp/images/etape2.webp": {
-    "type": "image/webp",
-    "etag": "\"1e92-IAwQXfYFjo5I+wlwweqoR/TJWuc\"",
-    "mtime": "2024-07-26T07:27:30.936Z",
-    "size": 7826,
-    "path": "../../.output/public/_ipx/f_webp/images/etape2.webp"
-  },
-  "/_ipx/f_webp/images/etape3.webp": {
-    "type": "image/webp",
-    "etag": "\"2890-W0A3uHsXIp4ReQgDH56pR8R7C0g\"",
-    "mtime": "2024-07-26T07:27:30.936Z",
-    "size": 10384,
-    "path": "../../.output/public/_ipx/f_webp/images/etape3.webp"
+  "/__sitemap__/style.xsl": {
+    "type": "application/xml",
+    "etag": "\"174e-04KStjaK+j7dbchiMHqnnHF1ICc\"",
+    "mtime": "2024-07-26T14:27:53.310Z",
+    "size": 5966,
+    "path": "../../.output/public/__sitemap__/style.xsl"
   },
   "/_ipx/f_webp&q_80/images/logo-matterport.svg": {
     "type": "image/svg+xml",
     "etag": "\"732-Jx9nDDE9pLRTlcgEySyQcr8+fcg\"",
-    "mtime": "2024-07-26T07:27:30.945Z",
+    "mtime": "2024-07-26T14:27:54.320Z",
     "size": 1842,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/logo-matterport.svg"
   },
   "/_ipx/f_webp&q_80/images/retouche-preview.webp": {
     "type": "image/webp",
     "etag": "\"4188-nY9ARn2LE4tBbBDQy1Cul4qCh4g\"",
-    "mtime": "2024-07-26T07:27:30.977Z",
+    "mtime": "2024-07-26T14:27:54.320Z",
     "size": 16776,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/retouche-preview.webp"
   },
   "/_ipx/f_webp&q_80/images/retouche.svg": {
     "type": "image/svg+xml",
     "etag": "\"12ce-0Yz+BUGaXLdJnwyF/DQE6r0ZN0U\"",
-    "mtime": "2024-07-26T07:27:30.936Z",
+    "mtime": "2024-07-26T14:27:54.322Z",
     "size": 4814,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/retouche.svg"
   },
   "/_ipx/f_webp&q_80/images/visite-virtuelle-3d-preview.webp": {
     "type": "image/webp",
     "etag": "\"7f00-JlyiVrjQ2J1Ql9QklTrfWCWEk84\"",
-    "mtime": "2024-07-26T07:27:30.985Z",
+    "mtime": "2024-07-26T14:27:54.383Z",
     "size": 32512,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-3d-preview.webp"
   },
   "/_ipx/f_webp&q_80/images/visite-virtuelle-hd-preview.webp": {
     "type": "image/webp",
     "etag": "\"a56a-sSJEniap5XmVWwTQuIuHretb2h0\"",
-    "mtime": "2024-07-26T07:27:30.935Z",
+    "mtime": "2024-07-26T14:27:54.320Z",
     "size": 42346,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-hd-preview.webp"
   },
   "/_ipx/f_webp&q_80/images/visite-virtuelle-icone-3d.svg": {
     "type": "image/svg+xml",
     "etag": "\"19ae-9CJbpGOwecaVnbzFHdLpZfS35s4\"",
-    "mtime": "2024-07-26T07:27:30.936Z",
+    "mtime": "2024-07-26T14:27:54.322Z",
     "size": 6574,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-icone-3d.svg"
   },
   "/_ipx/f_webp&q_80/images/visite-virtuelle-icone-hd.svg": {
     "type": "image/svg+xml",
     "etag": "\"1fba-KIfivFRhe1LJes0Y0M5XHlqFaUU\"",
-    "mtime": "2024-07-26T07:27:30.936Z",
+    "mtime": "2024-07-26T14:27:54.320Z",
     "size": 8122,
     "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-icone-hd.svg"
+  },
+  "/_ipx/f_webp/images/etape1.webp": {
+    "type": "image/webp",
+    "etag": "\"281e-4rGwJf3WD77moMCJ2z4j/r/LTqI\"",
+    "mtime": "2024-07-26T14:27:54.320Z",
+    "size": 10270,
+    "path": "../../.output/public/_ipx/f_webp/images/etape1.webp"
+  },
+  "/_ipx/f_webp/images/etape2.webp": {
+    "type": "image/webp",
+    "etag": "\"1e92-IAwQXfYFjo5I+wlwweqoR/TJWuc\"",
+    "mtime": "2024-07-26T14:27:54.320Z",
+    "size": 7826,
+    "path": "../../.output/public/_ipx/f_webp/images/etape2.webp"
+  },
+  "/_ipx/f_webp/images/etape3.webp": {
+    "type": "image/webp",
+    "etag": "\"2890-W0A3uHsXIp4ReQgDH56pR8R7C0g\"",
+    "mtime": "2024-07-26T14:27:54.320Z",
+    "size": 10384,
+    "path": "../../.output/public/_ipx/f_webp/images/etape3.webp"
   }
 };
 
