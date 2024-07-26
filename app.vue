@@ -20,7 +20,10 @@ provide("globalData", globalData);
 
 <template>
   <div id="app">
-    <Header @toggle-sidebar="toggleSidebar" :activeSlideIndex="activeSlideIndex" />
+    <Header
+      @toggle-sidebar="toggleSidebar"
+      :activeSlideIndex="activeSlideIndex"
+    />
     <swiper
       :modules="modules"
       :slides-per-view="1"

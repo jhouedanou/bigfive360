@@ -1,8 +1,14 @@
 export default defineNuxtConfig({
   css: ['~/assets/css/styles.scss',
     'bulma/css/bulma.min.css',
-    'material-icons/iconfont/material-icons.css'],
-
+    'material-icons/iconfont/material-icons.css',
+    'swiper/css',
+    'swiper/css/navigation',
+    'swiper/css/pagination',
+  ],
+  build: {
+    transpile: ['swiper'],
+  },
   app: {
     head: {
       charset: 'utf-8',
@@ -19,6 +25,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  site: {
+    url: 'https://bigfive360.com',
+  },
   modules: [
     '@nuxtjs/robots',
     'nuxt-simple-sitemap',
@@ -27,7 +36,10 @@ export default defineNuxtConfig({
   // image: {
   //   provider: 'vercel'
   // },  
-  vite: {
+  vite: {    
+    define: {
+    'process.env.DEBUG': false,
+  },
     server: {
       fs: {
         allow: ['/']

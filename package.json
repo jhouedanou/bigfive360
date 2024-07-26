@@ -14,7 +14,7 @@
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/robots": "^4.0.2",
     "aos": "^2.3.4",
-    "bulma": "^1.0.1",
+    "bulma": "^1.0.2",
     "material-icons": "^1.13.12",
     "nuxt": "^3.12.4",
     "nuxt-simple-sitemap": "^4.4.1",
@@ -29,7 +29,7 @@
     "@vuelidate/validators": "^2.0.4",
     "browser-sync": "^3.0.2",
     "sass": "^1.77.8",
-    "swiper": "^11.1.7",
+    "swiper": "^11.1.8",
     "vue-owl-carousel": "^2.0.3"
   }
 }

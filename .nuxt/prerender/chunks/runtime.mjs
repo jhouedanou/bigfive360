@@ -1,24 +1,24 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, getQuery as getQuery$1, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, setHeader, getHeader, appendHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, hasProtocol, withHttps, withoutProtocol, withTrailingSlash, withLeadingSlash, withoutTrailingSlash, withBase, decodePath } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ufo/dist/index.mjs';
-import { createStorage, defineDriver, prefixStorage } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unstorage/drivers/fs.mjs';
-import fsDriver from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unstorage/drivers/fs-lite.mjs';
-import lruCache from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unstorage/drivers/lru-cache.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/radix3/dist/index.mjs';
-import { toValue } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/vue/index.mjs';
-import { createConsola } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/unenv/runtime/npm/consola.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, getQuery as getQuery$1, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, setHeader, getHeader, appendHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Users/bigfiveproduction/bigfive360/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, hasProtocol, withHttps, withoutProtocol, withTrailingSlash, withLeadingSlash, withoutTrailingSlash, withBase, decodePath } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/ufo/dist/index.mjs';
+import { createStorage, defineDriver, prefixStorage } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/bigfiveproduction/bigfive360/node_modules/unstorage/drivers/fs.mjs';
+import fsDriver from 'file:///Users/bigfiveproduction/bigfive360/node_modules/unstorage/drivers/fs-lite.mjs';
+import lruCache from 'file:///Users/bigfiveproduction/bigfive360/node_modules/unstorage/drivers/lru-cache.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/radix3/dist/index.mjs';
+import { toValue } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/vue/index.mjs';
+import { createConsola } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/unenv/runtime/npm/consola.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve as resolve$1, isAbsolute } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/pathe/dist/index.mjs';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/bigfiveproduction/bigfive360/bigfive360/node_modules/ipx/dist/index.mjs';
+import { dirname, resolve as resolve$1, isAbsolute } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/pathe/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/bigfiveproduction/bigfive360/node_modules/ipx/dist/index.mjs';
 
 function getEnv(key, opts) {
   const envKey = snakeCase(key).toUpperCase();
@@ -69,7 +69,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "11b4b876-6ae1-4a65-a50b-072e284ffed3",
+    "buildId": "db7e407b-61c7-4b97-9e47-96ffdb9516e2",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -218,7 +218,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "/Users/bigfiveproduction/bigfive360/bigfive360/public"
+        "/Users/bigfiveproduction/bigfive360/public"
       ]
     },
     "http": {
@@ -281,7 +281,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/bigfiveproduction/bigfive360/bigfive360/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/bigfiveproduction/bigfive360/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -290,7 +290,7 @@ for (const asset of serverAssets) {
 }
 
 const normalizeFsKey = (item) => item.replaceAll(":", "_");
-const _47Users_47bigfiveproduction_47bigfive360_47bigfive360_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
+const _47Users_47bigfiveproduction_47bigfive360_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
   const fs = fsDriver({ base: opts.base });
   const lru = lruCache({ max: 1e3 });
   return {
@@ -315,12 +315,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('internal:nuxt:prerender', _47Users_47bigfiveproduction_47bigfive360_47bigfive360_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/Users/bigfiveproduction/bigfive360/bigfive360/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Users/bigfiveproduction/bigfive360/bigfive360/.nuxt/cache/nitro/prerender"}));
-storage.mount('data', fsDriver({"driver":"fsLite","base":"/Users/bigfiveproduction/bigfive360/bigfive360/.data/kv"}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/bigfiveproduction/bigfive360/bigfive360","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/bigfiveproduction/bigfive360/bigfive360/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/bigfiveproduction/bigfive360/bigfive360/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/bigfiveproduction/bigfive360/bigfive360/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('internal:nuxt:prerender', _47Users_47bigfiveproduction_47bigfive360_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/Users/bigfiveproduction/bigfive360/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Users/bigfiveproduction/bigfive360/.nuxt/cache/nitro/prerender"}));
+storage.mount('data', fsDriver({"driver":"fsLite","base":"/Users/bigfiveproduction/bigfive360/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/bigfiveproduction/bigfive360","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/bigfiveproduction/bigfive360/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/bigfiveproduction/bigfive360/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/bigfiveproduction/bigfive360/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1291,7 +1291,7 @@ function defineNitroPlugin(def) {
 }
 
 const PRERENDER_NO_SSR_ROUTES$1 = /* @__PURE__ */ new Set(["/index.html", "/200.html", "/404.html"]);
-const _LLLaqMdRfw = defineNitroPlugin(async (nitroApp) => {
+const _ojpM7Jkqsz = defineNitroPlugin(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", async (ctx, { event }) => {
     const routeOptions = getRouteRules(event);
     const isIsland = process.env.NUXT_COMPONENT_ISLANDS && event.path.startsWith("/__nuxt_island");
@@ -1323,7 +1323,7 @@ const logger = createConsola({
 });
 
 const PRERENDER_NO_SSR_ROUTES = /* @__PURE__ */ new Set(["/index.html", "/200.html", "/404.html"]);
-const _uqvshjjTsl = defineNitroPlugin(async (nitroApp) => {
+const _cd51GD4J8V = defineNitroPlugin(async (nitroApp) => {
   const { usingNuxtContent, robotsDisabledValue } = useRuntimeConfig()["nuxt-robots"];
   nitroApp._robots = {};
   await resolveRobotsTxtContext(void 0, nitroApp);
@@ -1357,8 +1357,8 @@ const _uqvshjjTsl = defineNitroPlugin(async (nitroApp) => {
 });
 
 const plugins = [
-  _LLLaqMdRfw,
-_uqvshjjTsl
+  _ojpM7Jkqsz,
+_cd51GD4J8V
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -1421,115 +1421,115 @@ const errorHandler = (async function errorhandler(error, event) {
 const assets = {
   "/200.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"b9255-J51BqjQzj8gmNkk9r1RLQhNgH+4\"",
-    "mtime": "2024-07-26T14:27:53.513Z",
+    "etag": "\"b9255-Csxy/TmxAfKOYTkilGEauH+PGsw\"",
+    "mtime": "2024-07-26T15:09:19.983Z",
     "size": 758357,
     "path": "../../.output/public/200.html"
   },
   "/404.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"b921a-cQx+GWakkDyiLCH5WW5Q20acotM\"",
-    "mtime": "2024-07-26T14:27:53.513Z",
+    "etag": "\"b921a-BspcsXK1MeGuYhcdYb0O10G9jBs\"",
+    "mtime": "2024-07-26T15:09:19.982Z",
     "size": 758298,
     "path": "../../.output/public/404.html"
   },
   "/_payload.json": {
     "type": "application/json",
-    "etag": "\"1964-h7337OfOvlurHRud+Rs6VHvEOOs\"",
-    "mtime": "2024-07-26T14:27:53.650Z",
+    "etag": "\"1964-QM7NLYBstscxH/pe/B4MTcDY1LU\"",
+    "mtime": "2024-07-26T15:09:20.281Z",
     "size": 6500,
     "path": "../../.output/public/_payload.json"
   },
   "/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"bcae3-Qi8b1eKk6XnxrddEsn+lv5vmCQc\"",
-    "mtime": "2024-07-26T14:27:53.582Z",
+    "etag": "\"bcae3-IApyml11jxSM/Qti7VLYs3ZWtms\"",
+    "mtime": "2024-07-26T15:09:20.090Z",
     "size": 772835,
     "path": "../../.output/public/index.html"
   },
   "/robots.txt": {
     "type": "text/plain; charset=utf-8",
     "etag": "\"4b-bPa9mAG9u7QHA6c2oHn3/ZCIzMI\"",
-    "mtime": "2024-07-26T14:27:53.310Z",
+    "mtime": "2024-07-26T15:09:19.845Z",
     "size": 75,
     "path": "../../.output/public/robots.txt"
   },
   "/__sitemap__/style.xsl": {
     "type": "application/xml",
     "etag": "\"174e-04KStjaK+j7dbchiMHqnnHF1ICc\"",
-    "mtime": "2024-07-26T14:27:53.310Z",
+    "mtime": "2024-07-26T15:09:19.845Z",
     "size": 5966,
     "path": "../../.output/public/__sitemap__/style.xsl"
-  },
-  "/_ipx/f_webp&q_80/images/logo-matterport.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"732-Jx9nDDE9pLRTlcgEySyQcr8+fcg\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
-    "size": 1842,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/logo-matterport.svg"
-  },
-  "/_ipx/f_webp&q_80/images/retouche-preview.webp": {
-    "type": "image/webp",
-    "etag": "\"4188-nY9ARn2LE4tBbBDQy1Cul4qCh4g\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
-    "size": 16776,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/retouche-preview.webp"
-  },
-  "/_ipx/f_webp&q_80/images/retouche.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"12ce-0Yz+BUGaXLdJnwyF/DQE6r0ZN0U\"",
-    "mtime": "2024-07-26T14:27:54.322Z",
-    "size": 4814,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/retouche.svg"
-  },
-  "/_ipx/f_webp&q_80/images/visite-virtuelle-3d-preview.webp": {
-    "type": "image/webp",
-    "etag": "\"7f00-JlyiVrjQ2J1Ql9QklTrfWCWEk84\"",
-    "mtime": "2024-07-26T14:27:54.383Z",
-    "size": 32512,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-3d-preview.webp"
-  },
-  "/_ipx/f_webp&q_80/images/visite-virtuelle-hd-preview.webp": {
-    "type": "image/webp",
-    "etag": "\"a56a-sSJEniap5XmVWwTQuIuHretb2h0\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
-    "size": 42346,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-hd-preview.webp"
-  },
-  "/_ipx/f_webp&q_80/images/visite-virtuelle-icone-3d.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"19ae-9CJbpGOwecaVnbzFHdLpZfS35s4\"",
-    "mtime": "2024-07-26T14:27:54.322Z",
-    "size": 6574,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-icone-3d.svg"
-  },
-  "/_ipx/f_webp&q_80/images/visite-virtuelle-icone-hd.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"1fba-KIfivFRhe1LJes0Y0M5XHlqFaUU\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
-    "size": 8122,
-    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-icone-hd.svg"
   },
   "/_ipx/f_webp/images/etape1.webp": {
     "type": "image/webp",
     "etag": "\"281e-4rGwJf3WD77moMCJ2z4j/r/LTqI\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
+    "mtime": "2024-07-26T15:09:20.304Z",
     "size": 10270,
     "path": "../../.output/public/_ipx/f_webp/images/etape1.webp"
   },
   "/_ipx/f_webp/images/etape2.webp": {
     "type": "image/webp",
     "etag": "\"1e92-IAwQXfYFjo5I+wlwweqoR/TJWuc\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
+    "mtime": "2024-07-26T15:09:20.307Z",
     "size": 7826,
     "path": "../../.output/public/_ipx/f_webp/images/etape2.webp"
   },
   "/_ipx/f_webp/images/etape3.webp": {
     "type": "image/webp",
     "etag": "\"2890-W0A3uHsXIp4ReQgDH56pR8R7C0g\"",
-    "mtime": "2024-07-26T14:27:54.320Z",
+    "mtime": "2024-07-26T15:09:20.321Z",
     "size": 10384,
     "path": "../../.output/public/_ipx/f_webp/images/etape3.webp"
+  },
+  "/_ipx/f_webp&q_80/images/logo-matterport.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"732-Jx9nDDE9pLRTlcgEySyQcr8+fcg\"",
+    "mtime": "2024-07-26T15:09:20.306Z",
+    "size": 1842,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/logo-matterport.svg"
+  },
+  "/_ipx/f_webp&q_80/images/retouche-preview.webp": {
+    "type": "image/webp",
+    "etag": "\"4188-nY9ARn2LE4tBbBDQy1Cul4qCh4g\"",
+    "mtime": "2024-07-26T15:09:20.300Z",
+    "size": 16776,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/retouche-preview.webp"
+  },
+  "/_ipx/f_webp&q_80/images/retouche.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"12ce-0Yz+BUGaXLdJnwyF/DQE6r0ZN0U\"",
+    "mtime": "2024-07-26T15:09:20.306Z",
+    "size": 4814,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/retouche.svg"
+  },
+  "/_ipx/f_webp&q_80/images/visite-virtuelle-3d-preview.webp": {
+    "type": "image/webp",
+    "etag": "\"7f00-JlyiVrjQ2J1Ql9QklTrfWCWEk84\"",
+    "mtime": "2024-07-26T15:09:20.302Z",
+    "size": 32512,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-3d-preview.webp"
+  },
+  "/_ipx/f_webp&q_80/images/visite-virtuelle-hd-preview.webp": {
+    "type": "image/webp",
+    "etag": "\"a56a-sSJEniap5XmVWwTQuIuHretb2h0\"",
+    "mtime": "2024-07-26T15:09:20.367Z",
+    "size": 42346,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-hd-preview.webp"
+  },
+  "/_ipx/f_webp&q_80/images/visite-virtuelle-icone-3d.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"19ae-9CJbpGOwecaVnbzFHdLpZfS35s4\"",
+    "mtime": "2024-07-26T15:09:20.305Z",
+    "size": 6574,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-icone-3d.svg"
+  },
+  "/_ipx/f_webp&q_80/images/visite-virtuelle-icone-hd.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"1fba-KIfivFRhe1LJes0Y0M5XHlqFaUU\"",
+    "mtime": "2024-07-26T15:09:20.306Z",
+    "size": 8122,
+    "path": "../../.output/public/_ipx/f_webp&q_80/images/visite-virtuelle-icone-hd.svg"
   }
 };
 
@@ -1623,7 +1623,7 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _ss3ggz = defineEventHandler(async (e) => {
+const _BhBzb3 = defineEventHandler(async (e) => {
   if (e.context.siteConfig)
     return;
   const runtimeConfig = useRuntimeConfig(e);
@@ -1664,7 +1664,7 @@ const _ss3ggz = defineEventHandler(async (e) => {
   e.context.siteConfig = ctx.siteConfig;
 });
 
-const _YFJEhz = defineEventHandler(async (e) => {
+const _nICSlB = defineEventHandler(async (e) => {
   const nitro = useNitroApp();
   const { indexable, hints } = getSiteRobotConfig(e);
   const { credits, usingNuxtContent, cacheControl } = useRuntimeConfig(e)["nuxt-robots"];
@@ -1713,7 +1713,7 @@ const _YFJEhz = defineEventHandler(async (e) => {
   return hookCtx.robotsTxt;
 });
 
-const _OGuw4i = defineEventHandler(async (e) => {
+const _Yv7LTJ = defineEventHandler(async (e) => {
   if (e.path === "/robots.txt" || e.path.startsWith("/__") || e.path.startsWith("/api") || e.path.startsWith("/_nuxt"))
     return;
   const robotConfig = getPathRobotConfig(e);
@@ -1763,7 +1763,7 @@ function useSimpleSitemapRuntimeConfig() {
   return Object.freeze(clone);
 }
 
-const _xSwQzd = defineEventHandler(async (e) => {
+const _cbxAzE = defineEventHandler(async (e) => {
   setHeader(e, "Content-Type", "application/xslt+xml");
   setHeader(e, "Cache-Control", "max-age=600, must-revalidate");
   const fixPath = createSitePathResolver(e, { absolute: false, withBase: true });
@@ -2639,7 +2639,7 @@ async function createSitemap(e, definition) {
   return sitemap;
 }
 
-const _hFHJ0S = defineEventHandler(async (e) => {
+const _yPldW2 = defineEventHandler(async (e) => {
   const { sitemaps } = useSimpleSitemapRuntimeConfig();
   if ("index" in sitemaps) {
     return sendRedirect(e, withBase("/sitemap_index.xml", useRuntimeConfig().app.baseURL), 301);
@@ -2647,7 +2647,7 @@ const _hFHJ0S = defineEventHandler(async (e) => {
   return createSitemap(e, Object.values(sitemaps)[0]);
 });
 
-const _ExUVlX = lazyEventHandler(() => {
+const _v2gK8N = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -2665,17 +2665,17 @@ const _ExUVlX = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_7yolId = () => import('./_/renderer.mjs').then(function (n) { return n.r; });
+const _lazy_9q9xcw = () => import('./_/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '', handler: _ss3ggz, lazy: false, middleware: true, method: undefined },
-  { route: '/robots.txt', handler: _YFJEhz, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _OGuw4i, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/style.xsl', handler: _xSwQzd, lazy: false, middleware: false, method: undefined },
-  { route: '/sitemap.xml', handler: _hFHJ0S, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _ExUVlX, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_7yolId, lazy: true, middleware: false, method: undefined }
+  { route: '', handler: _BhBzb3, lazy: false, middleware: true, method: undefined },
+  { route: '/robots.txt', handler: _nICSlB, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _Yv7LTJ, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/style.xsl', handler: _cbxAzE, lazy: false, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _yPldW2, lazy: false, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _v2gK8N, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_9q9xcw, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

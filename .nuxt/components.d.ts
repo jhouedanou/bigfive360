@@ -3,7 +3,6 @@ import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
       'Avantages': typeof import("../components/Avantages.vue")['default']
-    'Ccm': typeof import("../components/Ccm.vue")['default']
     'ContactForm': typeof import("../components/ContactForm.vue")['default']
     'Demo': typeof import("../components/Demo.vue")['default']
     'Devis': typeof import("../components/Devis.vue")['default']
@@ -16,6 +15,7 @@ interface _GlobalComponents {
     'Service': typeof import("../components/Service.vue")['default']
     'Sidebar': typeof import("../components/Sidebar.vue")['default']
     'Visite': typeof import("../components/Visite.vue")['default']
+    'Ccm': typeof import("../components/ccm.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -42,7 +42,6 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyAvantages': typeof import("../components/Avantages.vue")['default']
-    'LazyCcm': typeof import("../components/Ccm.vue")['default']
     'LazyContactForm': typeof import("../components/ContactForm.vue")['default']
     'LazyDemo': typeof import("../components/Demo.vue")['default']
     'LazyDevis': typeof import("../components/Devis.vue")['default']
@@ -55,6 +54,7 @@ interface _GlobalComponents {
     'LazyService': typeof import("../components/Service.vue")['default']
     'LazySidebar': typeof import("../components/Sidebar.vue")['default']
     'LazyVisite': typeof import("../components/Visite.vue")['default']
+    'LazyCcm': typeof import("../components/ccm.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -95,7 +95,6 @@ declare module 'vue' {
 }
 
 export const Avantages: typeof import("../components/Avantages.vue")['default']
-export const Ccm: typeof import("../components/Ccm.vue")['default']
 export const ContactForm: typeof import("../components/ContactForm.vue")['default']
 export const Demo: typeof import("../components/Demo.vue")['default']
 export const Devis: typeof import("../components/Devis.vue")['default']
@@ -108,6 +107,7 @@ export const Options: typeof import("../components/Options.vue")['default']
 export const Service: typeof import("../components/Service.vue")['default']
 export const Sidebar: typeof import("../components/Sidebar.vue")['default']
 export const Visite: typeof import("../components/Visite.vue")['default']
+export const Ccm: typeof import("../components/ccm.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -134,7 +134,6 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyAvantages: typeof import("../components/Avantages.vue")['default']
-export const LazyCcm: typeof import("../components/Ccm.vue")['default']
 export const LazyContactForm: typeof import("../components/ContactForm.vue")['default']
 export const LazyDemo: typeof import("../components/Demo.vue")['default']
 export const LazyDevis: typeof import("../components/Devis.vue")['default']
@@ -147,6 +146,7 @@ export const LazyOptions: typeof import("../components/Options.vue")['default']
 export const LazyService: typeof import("../components/Service.vue")['default']
 export const LazySidebar: typeof import("../components/Sidebar.vue")['default']
 export const LazyVisite: typeof import("../components/Visite.vue")['default']
+export const LazyCcm: typeof import("../components/ccm.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
