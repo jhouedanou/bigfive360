@@ -27,7 +27,11 @@ onMounted(() => {
 <template>
   <section id="devis" class="section is-fullheight secondary-bg">
     <div class="video-background">
-      <video ref="videoPlayer" class="video-js vjs-default-skin" preload="auto"></video>
+      <video
+        ref="videoPlayer"
+        class="video-js vjs-default-skin"
+        preload="auto"
+      ></video>
     </div>
     <div id="demopbdfs" class="container">
       <div class="columns">
@@ -94,14 +98,20 @@ onMounted(() => {
     color: #ffffff;
     font-family: Work Sans, sans-serif !important;
     font-weight: 700 !important;
-    font-size: 53px !important;
-    line-height: 59px !important;
+    font-size: 53px;
+    line-height: 59px;
     padding-bottom: 13px;
     margin-bottom: 23px !important;
     border-bottom: 1px #e61d00 solid;
     display: inline-block;
     position: relative;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  }
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 25px !important;
+    line-height: 1 !important;
   }
 }
 </style>

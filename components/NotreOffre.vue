@@ -13,7 +13,10 @@
         :modules="[Navigation, Pagination, Autoplay]"
         class="mySwiper"
       >
-        <swiper-slide v-for="(visite, index) in globalData?.visites" :key="index">
+        <swiper-slide
+          v-for="(visite, index) in globalData?.visites"
+          :key="index"
+        >
           <Visite
             :description="visite.description"
             :type="visite.type"

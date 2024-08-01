@@ -1,5 +1,13 @@
 <script setup>
+import { inject } from "vue";
 const globalData = inject("globalData");
+
+const scrollToAvantages = () => {
+  const avantagesDiv = document.querySelector("#avantages");
+  if (avantagesDiv) {
+    avantagesDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 <template>
   <section class="hero is-link is-fullheight-with-navbar">
@@ -7,7 +15,7 @@ const globalData = inject("globalData");
       <div class="container">
         <img :src="globalData?.hero.logo" class="logo" />
         <h1 class="title">{{ globalData?.hero.subtitle }}</h1>
-        <button class="lebtn">
+        <button class="lebtn" @click="scrollToAvantages">
           <span>{{ globalData?.hero.txtBtn }}</span>
         </button>
       </div>

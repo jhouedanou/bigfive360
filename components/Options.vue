@@ -34,4 +34,17 @@ const globalData = inject("globalData");
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 1024px) {
+  h4 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+    text-align: center;
+  }
+  li {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    text-align: center;
+  }
+}
+</style>

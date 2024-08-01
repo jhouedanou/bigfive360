@@ -9,9 +9,16 @@ import "swiper/css/pagination";
 
 const globalData = inject("globalData");
 const isSwiper = ref(false);
+const isMobile = ref(false);
+const checkIfMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
 
 onMounted(() => {
   isSwiper.value = true;
+  checkIfMobile();
+  window.addEventListener("resize", checkIfMobile);
+
   nextTick(() => {
     const items = document.querySelectorAll(".item");
     items.forEach((item) => {
@@ -22,6 +29,9 @@ onMounted(() => {
     });
   });
 });
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", checkIfMobile);
+});
 </script>
 
 <template>
@@ -30,9 +40,6 @@ onMounted(() => {
       <div class="container section">
         <h2 class="section-title">{{ globalData?.services.title }}</h2>
         <p>{{ globalData?.services.content }}</p>
-        <button class="btn lebtn">
-          <span>{{ globalData?.services.txtBtn }}</span>
-        </button>
       </div>
     </div>
     <client-only>
@@ -40,7 +47,7 @@ onMounted(() => {
         v-if="isSwiper"
         :modules="[Navigation, Pagination]"
         const
-        :slides-per-view="2"
+        :slides-per-view="isMobile ? 1 : 4"
         :space-between="0"
         :navigation="true"
         :pagination="true"
@@ -122,8 +129,16 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+  h2 {
+    margin-bottom: 0 !important;
+  }
   #services {
     .section {
+      min-height: 60vh;
+      p {
+        margin-top: 1rem !important;
+        margin-bottom: 0em !important;
+      }
     }
   }
   .section-title {
