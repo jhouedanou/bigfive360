@@ -19,8 +19,8 @@ const globalData = inject("globalData");
 $primary-color: #e61d00;
 
 .hero {
-  background: url("../images/background-hero.webp") $primary-color no-repeat center center
-    fixed;
+  background: url("../images/background-hero.webp") $primary-color no-repeat
+    center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,5 +41,28 @@ $primary-color: #e61d00;
 .hero-body {
   padding: 0 !important;
   margin: 0 !important;
+}
+//media query pourle H1
+@media screen and (max-width: 1013px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+      text-align: center;
+    }
+  }
+  .hero-body {
+    .container {
+      text-align: center;
+      .lebtn {
+        margin: 0 auto;
+      }
+    }
+  }
 }
 </style>

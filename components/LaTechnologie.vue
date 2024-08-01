@@ -53,4 +53,29 @@ const globalData = inject("globalData");
   min-height: 500px;
   line-height: 1.25;
 }
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 40px !important;
+    line-height: 45px !important;
+    text-align: center;
+  }
+  #techcontainer {
+    p {
+      font-size: 20px !important;
+      line-height: 25px !important;
+      text-align: center;
+    }
+    img {
+      max-width: 150px !important;
+      margin: 0 auto;
+    }
+  }
+  section {
+    li {
+      font-size: 20px !important;
+      line-height: 25px !important;
+      text-align: center;
+    }
+  }
+}
 </style>

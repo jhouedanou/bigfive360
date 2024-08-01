@@ -1,7 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
-const props = defineProps(["description", "type", "action", "icone", "lien", "preview"]);
+const props = defineProps([
+  "description",
+  "type",
+  "action",
+  "icone",
+  "lien",
+  "preview",
+]);
 const isPopupOpen = ref(false);
 
 const openPopup = () => {
@@ -17,7 +24,7 @@ const closePopup = () => {
     <div class="visite-item" @click="openPopup">
       <div class="columns is-flex">
         <div class="column visite-visuel is-three-fifths is-flex-grow-1">
-          <NuxtImg :src="preview" format="webp" quality="80" />
+          <NuxtImg class="preview" :src="preview" format="webp" quality="80" />
         </div>
         <div class="column visite-detail is-flex-grow-1">
           <NuxtImg class="icone" :src="icone" format="webp" quality="80" />
@@ -186,6 +193,46 @@ comparison-slider {
     height: 100%;
     opacity: 0;
     cursor: ew-resize;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .visite-visuel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .visite-item {
+    padding: 1em !important;
+    .visite-detail {
+      padding: 0.25rem !important;
+    }
+    .icone {
+      display: none;
+    }
+    .columns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      h3 {
+        font-size: 30px !important;
+        line-height: 35px !important;
+        text-align: center;
+      }
+
+      p {
+        font-size: 22px !important;
+        line-height: 25px !important;
+        text-align: center;
+      }
+      .preview {
+        max-width: 90vw !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+    }
   }
 }
 </style>

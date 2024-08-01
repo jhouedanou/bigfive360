@@ -178,4 +178,12 @@ header {
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .navbar-brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 </style>

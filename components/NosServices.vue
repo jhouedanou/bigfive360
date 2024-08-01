@@ -39,7 +39,8 @@ onMounted(() => {
       <Swiper
         v-if="isSwiper"
         :modules="[Navigation, Pagination]"
-        :slides-per-view="4"
+        const
+        :slides-per-view="2"
         :space-between="0"
         :navigation="true"
         :pagination="true"
@@ -117,6 +118,19 @@ p {
   .swiper-slide {
     max-height: $itemHeight;
     height: $itemHeight;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #services {
+    .section {
+    }
+  }
+  .section-title {
+    font-size: 22px !important;
+    line-height: 25px !important;
+    text-align: center;
+    padding: 1em;
   }
 }
 </style>
