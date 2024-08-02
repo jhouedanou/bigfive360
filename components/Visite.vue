@@ -223,8 +223,8 @@ comparison-slider {
       }
 
       p {
-        font-size: 22px !important;
-        line-height: 25px !important;
+        font-size: 18px !important;
+        line-height: 20px !important;
         text-align: center;
       }
       .preview {

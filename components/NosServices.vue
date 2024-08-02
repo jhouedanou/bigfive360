@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
     <div id="serviceintro" class="primary-bg">
       <div class="container section">
         <h2 class="section-title">{{ globalData?.services.title }}</h2>
-        <p>{{ globalData?.services.content }}</p>
+        <p id="mbenga">{{ globalData?.services.content }}</p>
       </div>
     </div>
     <client-only>
@@ -129,6 +129,10 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+  #mbenga {
+    padding: 1em;
+    text-align: center !important;
+  }
   h2 {
     margin-bottom: 0 !important;
   }

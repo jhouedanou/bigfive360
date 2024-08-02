@@ -442,22 +442,34 @@ body {
     bottom: 49px;
 }
 @media screen and (max-width: 1024px) {
+    .lebtn,
+    .btnstyle,
+    .btnstyle-alt,
+    .lebtn-alt {
+        width: 160px;
+        height: 40px;
+        span {
+            width: 148px;
+            height: 35px;
+            font-size: 12px;
+        }
+    }
     .section-title,
     .section-title-alt {
         font-size: 25px !important;
         line-height: 30px !important;
-        text-align: center;
+        text-align: left;
     }
     section {
         li {
-            font-size: 22px !important;
-            line-height: 25px !important;
-            text-align: center;
+            font-size: 18px !important;
+            line-height: 23px !important;
+            text-align: left;
         }
         p {
-            font-size: 22px !important;
-            line-height: 25px !important;
-            text-align: center;
+            font-size: 18px !important;
+            line-height: 23px !important;
+            text-align: left;
         }
     }
     #avantages {
@@ -471,4 +483,7 @@ body {
             text-align: center;
         }
     }
+}
+html {
+    scroll-behavior: smooth;
 }

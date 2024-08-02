@@ -138,4 +138,7 @@ p {
     max-width: 80vw;
   }
 }
+.swiper {
+  height: 60vh !important;
+}
 </style>

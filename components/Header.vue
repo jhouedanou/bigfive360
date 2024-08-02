@@ -10,11 +10,15 @@ const props = defineProps({
 const toggleSidebar = () => {
   isSidebarOpen.value = !isSidebarOpen.value;
 };
-
 const handleScroll = () => {
   isSticky.value = window.scrollY > 0;
 };
-
+const smoothScroll = (targetId) => {
+  const target = document.querySelector(targetId);
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+};
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
@@ -35,10 +39,10 @@ onUnmounted(() => {
     <div class="sidebar" :class="{ 'is-active': isSidebarOpen }">
       <!-- Contenu de la sidebar -->
       <ul>
-        <li><a href="#!">Accueil</a></li>
-        <li><a href="#!">Services</a></li>
-        <li><a href="#!">À propos</a></li>
-        <li><a href="#!">Contact</a></li>
+        <li><a @click="smoothScroll('#avantages')">Accueil</a></li>
+        <li><a @click="smoothScroll('#notreoffre')">Services</a></li>
+        <li><a @click="smoothScroll('#services')">À propos</a></li>
+        <li><a @click="smoothScroll('#devis')">Contact</a></li>
       </ul>
     </div>
     <div
@@ -63,7 +67,7 @@ onUnmounted(() => {
             <span class="material-icons">phone</span>
             {{ globalData?.navbar.numero }}
           </a>
-          <a class="navbar-item is-8-mobile">
+          <a @click="smoothScroll('#devis')" class="navbar-item is-8-mobile">
             <span class="material-icons">email</span>
           </a>
         </div>

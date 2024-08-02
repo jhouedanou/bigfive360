@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/houedanou/Documents/GitHub/bigfive360/node_modules/nuxt/dist/app/entry.js": {
+  "/Users/bigfiveproduction/bigfive360/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/Users/houedanou/Documents/GitHub/bigfive360/node_modules/nuxt/dist/app/entry.js"
+    "file": "/Users/bigfiveproduction/bigfive360/node_modules/nuxt/dist/app/entry.js"
   }
 }

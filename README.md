@@ -12,16 +12,17 @@ Pour lancer l'application, suivez ces étapes :
 
 1. Clonez le dépôt :
 2. Installez les dépendances : yarn install
-3. Lancez le serveur de développement avec Browsersync : yarn run dev 
+3. Lancez le serveur de développement avec Browsersync : yarn run dev
 
 4. Browsersync ouvrira automatiquement votre navigateur par défaut. Si ce n'est pas le cas, accédez à l'URL indiquée dans la console.
 
 ## Construction pour la production
 
-Pour construire l'application pour la production :
+Pour construire l'application pour la production : yarn generate
+
+Copiez ensuite le contenu du dossier .output/public à la racine d'un hebergement apache .
 
 Vous pouvez ensuite prévisualiser la version de production localement https://localhost:3001
-
 
 ## Technologies utilisées
 
@@ -33,6 +34,5 @@ Vous pouvez ensuite prévisualiser la version de production localement https://l
 - Chokidar
 
 Pour plus d'informations sur la configuration et le déploiement, consultez la [documentation de Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
-
 
 Jean Luc Houédanou

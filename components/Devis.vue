@@ -35,10 +35,10 @@ onMounted(() => {
     </div>
     <div id="demopbdfs" class="container">
       <div class="columns">
-        <div class="column is-half">
+        <div class="column is-12-mobile is-half">
           <ContactForm />
         </div>
-        <div class="column">
+        <div id="emboutoy" class="column is-12-mobile">
           <h1>{{ globalData?.demo.introForm }}</h1>
         </div>
       </div>
@@ -112,6 +112,9 @@ onMounted(() => {
   h1 {
     font-size: 25px !important;
     line-height: 1 !important;
+  }
+  #emboutoy {
+    display: none !important;
   }
 }
 </style>

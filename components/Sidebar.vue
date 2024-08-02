@@ -21,5 +21,10 @@
 </template>
 
 <script setup>
-// Pas de logique nécessaire ici pour le moment
+const smoothScroll = (targetId) => {
+  const target = document.querySelector(targetId);
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>

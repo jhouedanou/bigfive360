@@ -1,7 +1,6 @@
 <script setup>
 import { inject } from "vue";
 const globalData = inject("globalData");
-
 const scrollToAvantages = () => {
   const avantagesDiv = document.querySelector("#avantages");
   if (avantagesDiv) {
@@ -10,7 +9,7 @@ const scrollToAvantages = () => {
 };
 </script>
 <template>
-  <section class="hero is-link is-fullheight-with-navbar">
+  <section id="acccueil" class="hero is-link is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">
         <img :src="globalData?.hero.logo" class="logo" />
